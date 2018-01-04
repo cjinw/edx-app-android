@@ -85,7 +85,6 @@ public class MyCoursesListFragment extends BaseFragment
                 environment.getRouter().showCourseDashboardTabs(getActivity(), environment.getConfig(), model, true);
             }
         };
-        environment.getAnalyticsRegistry().trackScreenView(Analytics.Screens.MY_COURSES);
         EventBus.getDefault().register(this);
     }
 

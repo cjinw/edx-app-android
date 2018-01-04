@@ -101,7 +101,7 @@
     <!-- Content description for edit profile button -->
     <string name="open_profile_button">Open your profile</string>
     <!-- Title of user's course list screen -->
-    <string name="label_my_courses">My Courses</string>
+    <string name="label_my_courses" tools:ignore="MissingTranslation">Courses</string>
     <!-- Title of important course dates screen -->
     <string name="label_course_dates">Course Dates and Deadlines</string>
     <!-- Title of native Find Courses Screen -->

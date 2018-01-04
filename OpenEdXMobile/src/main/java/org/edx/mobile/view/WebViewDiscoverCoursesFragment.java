@@ -29,7 +29,6 @@ public class WebViewDiscoverCoursesFragment extends BaseWebViewDiscoverFragment 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        environment.getAnalyticsRegistry().trackScreenView(Analytics.Screens.FIND_COURSES);
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_webview_course_discovery, container, false);
         return binding.getRoot();
     }
