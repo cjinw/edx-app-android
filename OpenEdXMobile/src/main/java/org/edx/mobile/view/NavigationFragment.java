@@ -119,7 +119,7 @@ public class NavigationFragment extends BaseFragment {
                         if (!(act instanceof UserProfileActivity)) {
                             environment.getRouter().showUserProfileWithNavigationDrawer(getActivity(), profile.username);
 
-                            if (!(act instanceof MyCoursesListActivity)) {
+                            if (!(act instanceof MyCoursesListActivity || act instanceof MainDashboardActivity)) {
                                 act.finish();
                             }
                         }
@@ -138,7 +138,7 @@ public class NavigationFragment extends BaseFragment {
                 Activity act = getActivity();
                 ((BaseFragmentActivity) act).closeDrawer();
 
-                if (!(act instanceof MyCoursesListActivity)) {
+                if (!(act instanceof MyCoursesListActivity || act instanceof MainDashboardActivity)) {
                     environment.getRouter().showMyCourses(act);
                     act.finish();
                 }
@@ -159,7 +159,7 @@ public class NavigationFragment extends BaseFragment {
                         //Finish need not be called if the current activity is MyCourseListing
                         // as on returning back from FindCourses,
                         // the student should be returned to the MyCourses screen
-                        if (!(act instanceof MyCoursesListActivity)) {
+                        if (!(act instanceof MyCoursesListActivity || act instanceof MainDashboardActivity)) {
                             act.finish();
                         }
                     }
