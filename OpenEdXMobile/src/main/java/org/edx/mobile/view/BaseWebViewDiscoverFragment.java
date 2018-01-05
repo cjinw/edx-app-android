@@ -22,6 +22,7 @@ import org.edx.mobile.http.HttpStatus;
 import org.edx.mobile.http.HttpStatusException;
 import org.edx.mobile.http.notifications.FullScreenErrorNotification;
 import org.edx.mobile.http.provider.OkHttpClientProvider;
+import org.edx.mobile.interfaces.RefreshListener;
 import org.edx.mobile.interfaces.WebViewStatusListener;
 import org.edx.mobile.logger.Logger;
 import org.edx.mobile.util.WebViewUtil;
@@ -32,15 +33,14 @@ import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import retrofit2.Response;
 
-public class BaseWebViewDiscoverFragment extends BaseFragment
-        implements URLInterceptorWebViewClient.IActionListener, WebViewStatusListener {
+public abstract class BaseWebViewDiscoverFragment extends BaseFragment
+        implements URLInterceptorWebViewClient.IActionListener, WebViewStatusListener, RefreshListener {
     protected final Logger logger = new Logger(getClass().getName());
 
     private EdxWebView webView;
     private ProgressBar progressWheel;
-    private boolean isTaskInProgress = false;
 
-    private FullScreenErrorNotification errorNotification;
+    protected FullScreenErrorNotification errorNotification;
 
     @Inject
     protected IEdxEnvironment environment;
@@ -99,7 +99,13 @@ public class BaseWebViewDiscoverFragment extends BaseFragment
      * @param url The URL to load.
      */
     protected void loadUrl(@NonNull String url) {
-        WebViewUtil.loadUrlBasedOnOsVersion(getContext(), webView, url, this, errorNotification, okHttpClientProvider);
+        WebViewUtil.loadUrlBasedOnOsVersion(getContext(), webView, url, this, errorNotification,
+                okHttpClientProvider, R.string.lbl_reload, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        onRefresh();
+                    }
+                });
     }
 
     @Override
@@ -168,7 +174,13 @@ public class BaseWebViewDiscoverFragment extends BaseFragment
                                     String failingUrl) {
             errorNotification.showError(getContext(),
                     new HttpStatusException(Response.error(HttpStatus.SERVICE_UNAVAILABLE,
-                            ResponseBody.create(MediaType.parse("text/plain"), description))));
+                            ResponseBody.create(MediaType.parse("text/plain"), description))),
+                    R.string.lbl_reload, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            onRefresh();
+                        }
+                    });
             clearWebView();
         }
 
@@ -181,7 +193,13 @@ public class BaseWebViewDiscoverFragment extends BaseFragment
                 errorNotification.showError(getContext(),
                         new HttpStatusException(Response.error(errorResponse.getStatusCode(),
                                 ResponseBody.create(MediaType.parse(errorResponse.getMimeType()),
-                                        errorResponse.getReasonPhrase()))));
+                                        errorResponse.getReasonPhrase()))),
+                        R.string.lbl_reload, new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                onRefresh();
+                            }
+                        });
                 clearWebView();
             }
         }

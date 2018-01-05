@@ -15,12 +15,15 @@ import android.view.ViewGroup;
 
 import org.edx.mobile.R;
 import org.edx.mobile.databinding.FragmentWebviewCourseDiscoveryBinding;
+import org.edx.mobile.event.MainDashboardRefreshEvent;
+import org.edx.mobile.event.NetworkConnectivityChangeEvent;
 import org.edx.mobile.logger.Logger;
-import org.edx.mobile.module.analytics.Analytics;
 import org.edx.mobile.util.Config;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+
+import de.greenrobot.event.EventBus;
 
 public class WebViewDiscoverCoursesFragment extends BaseWebViewDiscoverFragment {
     private FragmentWebviewCourseDiscoveryBinding binding;
@@ -36,10 +39,11 @@ public class WebViewDiscoverCoursesFragment extends BaseWebViewDiscoverFragment 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        loadUrl(getInitialUrl());
 
+        loadUrl(getInitialUrl());
         final Config config = environment.getConfig();
         setHasOptionsMenu(config.getCourseDiscoveryConfig().isWebCourseSearchEnabled());
+        EventBus.getDefault().register(this);
     }
 
     @NonNull
@@ -111,5 +115,33 @@ public class WebViewDiscoverCoursesFragment extends BaseWebViewDiscoverFragment 
             searchUrl = baseUrl + "?" + searchTerm;
         }
         return searchUrl;
+    }
+
+    @SuppressWarnings("unused")
+    public void onEvent(MainDashboardRefreshEvent event) {
+        loadUrl(getInitialUrl());
+    }
+
+    @Override
+    public void onRefresh() {
+        EventBus.getDefault().post(new MainDashboardRefreshEvent());
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        CourseTabsUtils.setUserVisibleHint(getActivity(), isVisibleToUser,
+                errorNotification != null && errorNotification.isShowing());
+    }
+
+    @SuppressWarnings("unused")
+    public void onEvent(NetworkConnectivityChangeEvent event) {
+        CourseTabsUtils.onNetworkConnectivityChangeEvent(getActivity(), getUserVisibleHint(),
+                errorNotification.isShowing());
+    }
+
+    @Override
+    protected void onRevisit() {
+        CourseTabsUtils.onRevisit(getActivity());
     }
 }
