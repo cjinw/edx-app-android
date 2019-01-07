@@ -91,9 +91,9 @@
 
     <!-- License Agreement related string on Login and Regiser screens -->
     <!-- Create account agreement. Followed by list of agreement names like "End User License Agreement" -->
-    <string name="by_creating_account" tools:ignore="MissingTranslation">By creating an account, you agree to the {license} and {tos_and_honor_code} and acknowledge the {privacy_policy}</string>
+    <string name="by_creating_account" tools:ignore="MissingTranslation">By creating an account, you agree to the {tos_and_honor_code} and acknowledge the {privacy_policy}</string>
     <!-- Sign In agreement. Followed by list of agreement names like "End User License Agreement" -->
-    <string name="by_signing_in" tools:ignore="MissingTranslation">By signing in to this app, you agree to the {license} and {tos_and_honor_code} and acknowledge the {privacy_policy}</string>
+    <string name="by_signing_in" tools:ignore="MissingTranslation">By signing in to this app, you agree to the  {tos_and_honor_code} and acknowledge the {privacy_policy}</string>
     <!-- Label for End User License Agreement -->
     <string name="licensing_agreement" tools:ignore="MissingTranslation">{platform_name} End User License Agreement</string>
     <!-- Label for Terms of Service and Honor Code -->
@@ -513,7 +513,7 @@
     <!-- Button leading user to log in screen -->
     <string name="launch_login">Log In</string>
     <!-- Introduction text on the launch screen -->
-    <string name="launch_text">Free courses from the world’s best universities in your pocket.</string>
+    <string name="launch_text">K-MOOC, Top Quality Courses for Your Future</string>
     <!-- Search view leading user to Find Courses screen from the launch screen upon searching some text -->
     <string name="launch_search_courses">Search Courses</string>
 

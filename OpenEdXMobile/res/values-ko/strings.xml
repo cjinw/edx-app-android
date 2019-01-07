@@ -69,12 +69,18 @@
   <string name="error_heading">로그인 중에 다음 오류가 발생하였습니다</string>
   <!--Error during log in.-->
   <string name="login_failed">이메일 주소/아이디와 비밀번호가 정확한지 확인해주세요. </string>
-  <!--License Agreement related string on Login and Regiser screens-->
-  <!--Create account agreement. Followed by list of agreement names like "End User License Agreement"-->
-  <!--Sign In agreement. Followed by list of agreement names like "End User License Agreement"-->
-  <!--Label for End User License Agreement-->
-  <!--Label for Terms of Service and Honor Code-->
-  <!--Label for Privacy Policy-->
+
+  <!-- License Agreement related string on Login and Regiser screens -->
+  <!-- Create account agreement. Followed by list of agreement names like "End User License Agreement" -->
+  <!--<string name="by_creating_account" tools:ignore="MissingTranslation">By creating an account, you agree to the {tos_and_honor_code} and acknowledge the {privacy_policy}</string>-->
+  <!-- Sign In agreement. Followed by list of agreement names like "End User License Agreement" -->
+  <string name="by_signing_in" tools:ignore="MissingTranslation">이 앱에 로그인 함으로서 다음 약관에 동의하게 됩니다.\n{tos_and_honor_code}\n{privacy_policy}</string>
+  <!-- Label for End User License Agreement -->
+  <!-- Label for Terms of Service and Honor Code -->
+  <string name="tos_and_honor_code" tools:ignore="MissingTranslation">{platform_name} 서비스 이용약관</string>
+  <!-- Label for Privacy Policy -->
+  <string name="privacy_policy" tools:ignore="MissingTranslation">개인정보처리방침</string>
+
   <string name="login_title">로그인</string>
   <!--Accessible content description of close button on Sign in and Sign up screen-->
   <string name="close">닫기</string>
@@ -135,8 +141,9 @@
   <string name="leaving_app_data_message">앱을 벗어나면 더이상 무료 {platform_name} 콘텐츠를 조회할 수 없습니다. 데이터 요금이 과다 청구될 수 있습니다.</string>
   <!--Title of agreement users must accept to use the app-->
   <string name="end_user_title">K-MOOC 이용약관</string>
-  <!--Title of privacy policy users must accept to use the app-->
-  <!--Title of terms of service & honor code users must accept to use the app-->
+  <string name="privacy_policy_title" translatable="false">@string/privacy_policy</string>
+  <!-- Title of terms of service & honor code users must accept to use the app -->
+  <string name="terms_of_service_title" tools:ignore="MissingTranslation">서비스 이용약관</string>
   <!--My Courses-->
   <!--Row of course on dashboard screen-->
   <!--Row of course on dashboard screen-->
@@ -423,7 +430,7 @@
   <!-- Button leading user to log in screen -->
   <string name="launch_login">로그인</string>
   <!-- Introduction text on the launch screen -->
-  <string name="launch_text">Free courses from the world’s best universities in your pocket.</string>
+  <string name="launch_text">미래를 여는 최고의 강좌\nK-MOOC, Top Quality Courses for Your Future</string>
   <!-- Search view leading user to Find Courses screen from the launch screen upon searching some text -->
   <string name="launch_search_courses">강좌 검색</string>
   <!--Registration Screen-->
