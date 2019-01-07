@@ -6,6 +6,8 @@ import android.view.View;
 import org.edx.mobile.R;
 import org.edx.mobile.core.IEdxEnvironment;
 import org.edx.mobile.databinding.AuthPanelBinding;
+import org.edx.mobile.view.dialog.WebViewActivity;
+
 
 /**
  * The "auth panel" is the panel that appears at the bottom of the screen when not logged in.
@@ -45,8 +47,9 @@ public class AuthPanelUtils {
             signUpButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    environment.getAnalyticsRegistry().trackUserSignUpForAccount();
-                    v.getContext().startActivity(environment.getRouter().getRegisterIntent());
+//                    environment.getAnalyticsRegistry().trackUserSignUpForAccount();
+//                    v.getContext().startActivity(environment.getRouter().getRegisterIntent());
+                    v.getContext().startActivity(WebViewActivity.newIntent(v.getContext(), "https://www.kmooc.kr/register", v.getContext().getString(R.string.register_title)));
                 }
             });
         } else {

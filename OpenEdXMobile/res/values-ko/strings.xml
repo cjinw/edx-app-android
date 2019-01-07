@@ -445,7 +445,7 @@
   <!--Text shown while waiting for registration request-->
   <string name="creating_account_text">계정 생성...</string>
   <!--Registration screen title-->
-  <string name="register_title">등록</string>
+  <string name="register_title">회원가입</string>
   <!--Text for successful registration with social token-->
   <string name="sign_up_with_facebook_ok">페이스북을 통해 로그인 하였습니다.</string>
   <string name="sign_up_with_google_ok">구글을 통해 로그인 하였습니다.</string>
