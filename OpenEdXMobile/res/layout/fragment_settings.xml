@@ -55,7 +55,8 @@
             <Switch
                 android:id="@+id/wifi_setting"
                 style="@style/edX.Widget.Switch"
-                android:checked="true" />
+                android:checked="false"
+                tools:checked="false" />
         </LinearLayout>
 
     </LinearLayout>
