@@ -174,8 +174,11 @@
   <!--Label indicating new course content has been downloaded-->
   <string name="new_course_content">새 강좌 콘텐츠</string>
   <!--Label for date when course starts-->
-  <!--Label for course that has ended-->
-  <!--Label for date when course is ending-->
+  <string name="label_starting">개강예정(개강일:{date}일)</string>
+  <!-- Label for course that has ended -->
+  <string name="label_ended">종료(종강일:{date}일)</string>
+  <!-- Label for date when course is ending -->
+  <string name="label_ending">진행중(종강일:{date}일)</string>
   <!--Course Details-->
   <!--Accessible content description of label for course content-->
   <string name="course_content">강좌 콘텐츠</string>
