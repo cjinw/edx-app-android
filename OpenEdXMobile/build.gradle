@@ -411,6 +411,9 @@ android {
         }
 
         release {
+            lintOptions {
+                disable 'MissingTranslation'
+            }
             signingConfig signingConfigs.releasekey
             applicationVariants.all { variant ->
                 variant.outputs.each { output ->
