@@ -365,10 +365,15 @@ public class EditUserProfileFragment extends BaseFragment {
                         } else {
                             displayValue = text;
                         }
+
                         createField(layoutInflater, viewHolder.fields, field, displayValue, isLimited && !field.getName().equals(Account.YEAR_OF_BIRTH_SERIALIZED_NAME), new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                startActivityForResult(FormFieldActivity.newIntent(getActivity(), field, value), EDIT_FIELD_REQUEST);
+                                if(field.getName().equals("bio"))
+                                {
+                                    startActivityForResult(FormFieldActivity.newIntent(getActivity(), field, value), EDIT_FIELD_REQUEST);
+                                }
+//                                startActivityForResult(FormFieldActivity.newIntent(getActivity(), field, value), EDIT_FIELD_REQUEST);
                             }
                         });
                         break;
@@ -501,10 +506,24 @@ public class EditUserProfileFragment extends BaseFragment {
             put("value", formattedValue);
         }}));
         Context context = parent.getContext();
-        TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                textView, null, null, new IconDrawable(context, FontAwesomeIcons.fa_angle_right)
-                        .colorRes(context, R.color.edx_brand_gray_back)
-                        .sizeDp(context, 24), null);
+//        TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(
+//                textView, null, null, new IconDrawable(context, FontAwesomeIcons.fa_angle_right)
+//                        .colorRes(context, R.color.edx_brand_gray_back)
+//                        .sizeDp(context, 24), null);
+
+        if(field.getName().equals("bio"))
+        {
+            TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(
+                    textView, null, null, new IconDrawable(context, FontAwesomeIcons.fa_angle_right)
+                            .colorRes(context, R.color.edx_brand_gray_back)
+                            .sizeDp(context, 24), null);
+        }
+        else
+        {
+            TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(
+                    textView, null, null, null, null);
+        }
+
         if (readOnly) {
             textView.setEnabled(false);
             textView.setBackgroundColor(textView.getResources().getColor(R.color.edx_brand_gray_x_back));
