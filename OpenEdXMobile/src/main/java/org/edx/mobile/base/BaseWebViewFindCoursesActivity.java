@@ -38,6 +38,7 @@ import org.edx.mobile.view.custom.EdxWebView;
 import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 import org.edx.mobile.view.dialog.EnrollmentFailureDialogFragment;
 import org.edx.mobile.view.dialog.IDialogCallback;
+import org.edx.mobile.view.dialog.WebViewActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -191,7 +192,8 @@ public abstract class BaseWebViewFindCoursesActivity extends BaseFragmentActivit
         if (environment.getLoginPrefs().getUsername() == null) {
             lastClickEnrollCourseId = courseId;
             lastClickEnrollEmailOptIn = emailOptIn;
-            startActivityForResult(environment.getRouter().getRegisterIntent(), LOG_IN_REQUEST_CODE);
+//            startActivityForResult(environment.getRouter().getRegisterIntent(), LOG_IN_REQUEST_CODE);
+            startActivity(WebViewActivity.newIntent(this, "https://www.kmooc.kr/register", getString(R.string.register_title)));
             return;
         }
 

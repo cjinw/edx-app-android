@@ -94,7 +94,7 @@
   <string name="label_my_courses">내 강의실</string>
   <!--Title of user's program list screen-->
   <!--Title of native Find Courses Screen-->
-  <string name="label_discover">discover</string>
+  <string name="label_discover">강좌찾기</string>
   <string name="label_discovery">강좌찾기</string>
   <string name="label_find_courses">강좌 목록</string>
   <!--Title of webview based Find Courses Screen-->
