@@ -434,9 +434,9 @@
   <!-- Button leading user to log in screen -->
   <string name="launch_login">로그인</string>
   <!-- Introduction text on the launch screen -->
-  <string name="launch_text">미래를 여는 최고의 강좌\nK-MOOC, Top Quality Courses for Your Future</string>
+  <string name="launch_text">내 손안에 펼쳐지는 오픈 캠퍼스</string>
   <!-- Search view leading user to Find Courses screen from the launch screen upon searching some text -->
-  <string name="launch_search_courses">강좌 검색</string>
+  <string name="launch_search_courses">배우고 싶은 강좌를 찾아 보세요</string>
   <!--Registration Screen-->
   <!--Button text allowing user to show hidden optional registration fields-->
   <string name="show_optional_text">선택사항 입력창 열기</string>
