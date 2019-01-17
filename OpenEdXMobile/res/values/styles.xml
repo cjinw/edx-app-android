@@ -408,8 +408,8 @@
 
     <style name="edX.Widget.BorderedButton" parent="edX.Widget.Button">
         <item name="android:minHeight">@dimen/edx_button_height</item>
-        <item name="android:textColor">@color/edx_brand_primary_base</item>
-        <item name="android:background">@drawable/edx_bordered_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/edx_bordered_button2</item>
         <item name="android:textSize">@dimen/edx_small</item>
         <item name="android:paddingLeft">@dimen/button_horizontal_padding</item>
         <item name="android:paddingRight">@dimen/button_horizontal_padding</item>
