@@ -228,6 +228,7 @@ dependencies {
     androidTestCompile ("org.mockito:mockito-core:1.10.19"){
         exclude group: 'org.hamcrest'
     }
+    compile files('libs/3rdparty_login_library_android_4.1.4.jar')
 }
 
 configurations {
