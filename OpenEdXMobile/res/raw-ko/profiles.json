@@ -1,59 +1,59 @@
 {
-    "fields":[
+  "fields":[
     {
-              "name" : "account_privacy",
-              "label" : "Other learners can see my:",
-              "type" : "switch",
-              "data_type" : "boolean",
-              "options" : {
-                "values" : [
-                            { "name" : "Full Profile", "value" : "all_users" },
-                            { "name" : "Limited Profile",  "value" : "private" }
-                 ]
-              },
-              "instructions" : "A limited profile only shares your username and profile photo.",
-              "accessibility_hint" : "Change what information is shared with others."
+      "name" : "account_privacy",
+      "label" : "K-MOOC 학습자가 나에 대해 볼 수 있는 것은:",
+      "type" : "switch",
+      "data_type" : "boolean",
+      "options" : {
+        "values" : [
+          { "name" : "전체 프로필", "value" : "all_users" },
+          { "name" : "제한적 프로필",  "value" : "private" }
+        ]
+      },
+      "instructions" : "제한적 프로필은 아이디와 사진만 공개 합니다.\n(사진과 자기소개 이외의 프로필 수정은 kmooc.kr에서 가능합니다.)",
+      "accessibility_hint" : "Change what information is shared with others."
     },
     {
-              "name" : "year_of_birth",
-              "label" : "Birth year",
-              "type" : "select",
-              "options" : {
-                "range_min" : 1896,
-                "range_max" : 2015,
-                "allows_none" : true,
-                "none_label" : "No birth year"
-              },
-              "instructions" : "You must specify your birth year before you can share your full profile.",
-              "sub_instructions" : "This will not be displayed publicly"
+      "name" : "year_of_birth",
+      "label" : "출생연도",
+      "type" : "select",
+      "options" : {
+        "range_min" : 1896,
+        "range_max" : 2015,
+        "allows_none" : true,
+        "none_label" : "No birth year"
+      },
+      "instructions" : "You must specify your birth year before you can share your full profile.",
+      "sub_instructions" : "This will not be displayed publicly"
     },
     {
-              "name" : "country",
-              "label" : "Location",
-              "type" : "select",
-              "data_type" : "country",
-              "options" : {
-                "reference" : "countries",
-                "allows_none" : true,
-                "none_label" : "No location"
-              }
+      "name" : "country",
+      "label" : "국가",
+      "type" : "select",
+      "data_type" : "country",
+      "options" : {
+        "reference" : "countries",
+        "allows_none" : true,
+        "none_label" : "No location"
+      }
     },
     {
-              "name" : "language_proficiencies",
-              "label" : "Primary language",
-              "type" : "select",
-              "data_type" : "language",
-              "options" : {
-                "reference" : "languages",
-                "allows_none" : true,
-                "none_label" : "No primary language"
-              }
+      "name" : "language_proficiencies",
+      "label" : "선호하는 언어",
+      "type" : "select",
+      "data_type" : "language",
+      "options" : {
+        "reference" : "languages",
+        "allows_none" : true,
+        "none_label" : "No primary language"
+      }
     },
     {
-              "name" : "bio",
-              "label" : "About me",
-              "type" : "textarea",
-              "placeholder" : "I would like to learn..."
+      "name" : "bio",
+      "label" : "자기소개",
+      "type" : "textarea",
+      "placeholder" : "다른 학습자들에게 간단하게 나를 소개합니다. 관심사, 수강 이유 또는 학습 목표 같은 것을 쓰면 됩니다."
     }
-    ]
+  ]
 }

@@ -123,7 +123,7 @@
   <!--Reset password alert dialog title-->
   <string name="title_reset_password_failed">비밀번호 재설정 오류</string>
   <!--Label for switch controlling whether users permit downloading using cellular data or only wifi-->
-  <string name="wifi_dialog_title_help">셀룰러 데이터 다운로드 허용</string>
+  <string name="wifi_dialog_title_help">3G/LTE 연결시 다운로드 허용하기</string>
   <!--Password reset sent succesfully alert-->
   <string name="success_dialog_message_help">이메일 주소로 비밀번호 재설정 안내를 발송하였습니다.
 몇분 내로 이메일을 확인할 수 없다면 스팸 보관함을 확인해보세요.</string>
@@ -165,6 +165,7 @@
   <string name="announcement_title">공지사항</string>
   <!--Title text for the important dates section on the course dashboard-->
   <!--Title text for the additional resources section on the tabular course dashboard-->
+  <string name="resources_title">기타</string>
   <!--Row of announcement on dashboard screen-->
   <!--NOTE: TODO - not final one-->
   <string name="announcement_subtitle">강좌의 최근 소식이 게시됩니다</string>
@@ -194,7 +195,7 @@
   <!--Label shown when no announcements are available for a course-->
   <string name="no_announcements_to_display">현재 이 강좌에 공지사항이 없습니다.</string>
   <!--Label shown when no handouts are available for a course-->
-  <string name="no_handouts_to_display">현재 이 강좌에 유인물이 없습니다.</string>
+  <string name="no_handouts_to_display">현재 이 강좌에 학습자료가 없습니다.</string>
   <!--Label shown when no important dates are available for a course-->
   <!--Title of the screen where user can delete videos-->
   <!--Label for a course item's due date for same day-->
@@ -528,13 +529,13 @@
   <!--This text is shown in place of the "About Me" text if the user has not filled in their "About Me"-->
   <string name="profile_incomplete_about_me">“자기소개” 정보가 없습니다.</string>
   <!--Window title for edit profile screen-->
-  <string name="edit_user_profile_title">프로필 편집</string>
+  <string name="edit_user_profile_title">프로필 편집하기</string>
   <!--How most profile fields are formatted when viewing the edit screen-->
   <string name="edit_user_profile_field">{label}: {value}</string>
   <!--Default placeholder if a profile field is blank-->
   <string name="edit_user_profile_field_placeholder">선택</string>
   <!--Button that saves changes to a profile text field-->
-  <string name="edit_user_profile_textarea_submit_button">제출</string>
+  <string name="edit_user_profile_textarea_submit_button">확인</string>
   <!--An option that will set the user profile's primary language to the language of their device's configured locale-->
   <string name="edit_user_profile_current_language">현재 언어: {current_language}</string>
   <!--An option that will set the user profile's location to the country of their device's configured locale-->
