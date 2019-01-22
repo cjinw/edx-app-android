@@ -38,6 +38,18 @@
   <string name="error_account_not_linked_title_google">La cuenta de Google no está asociada con una cuenta de {platform_name}</string>
   <!--Content of alert shown during login when user attempts login via Google without having linked their account-->
   <string name="error_account_not_linked_desc_google">Asegurese de que su cuenta de Google está asociada con su cuenta de {platform_name} en {platform_destination}</string>
+  <!-- Title of alert shown during login when user attempts login via Naver without having linked their account -->
+  <string name="error_account_not_linked_title_naver">Naver account not associated with {platform_name} account</string>
+  <!-- Content of alert shown during login when user attempts login via Naver without having linked their account -->
+  <string name="error_account_not_linked_desc_naver">Make sure your Naver account is associated with your {platform_name} account on {platform_destination}</string>
+  <!-- Title of alert shown during login when user attempts login via Kakao without having linked their account -->
+  <string name="error_account_not_linked_title_kakao">Kakao account not associated with {platform_name} account</string>
+  <!-- Content of alert shown during login when user attempts login via Kakao without having linked their account -->
+  <string name="error_account_not_linked_desc_kakao">Make sure your Kakao account is associated with your {platform_name} account on {platform_destination}</string>
+
+  <!-- Download error messages -->
+  <!-- Label shown on video list item whose download failed -->
+
   <!--Download error messages-->
   <!--Label shown on video list item whose download failed-->
   <string name="error_download_failed">Descarga fallida.</string>

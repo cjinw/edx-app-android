@@ -419,6 +419,9 @@
   <!--Naver login method-->
   <string name="naver_text">네이버</string>
 
+  <!--Kakao login method-->
+  <string name="kakao_text">카카오</string>
+
   <!--Prompt allowing user to choose email program-->
   <string name="email_chooser_header">...을 통해 이메일을 발송하세요</string>
   <!--Error shown when user attempts to send email, but has no email app-->
@@ -458,6 +461,8 @@
   <!--Text for successful registration with social token-->
   <string name="sign_up_with_facebook_ok">페이스북을 통해 로그인 하였습니다.</string>
   <string name="sign_up_with_google_ok">구글을 통해 로그인 하였습니다.</string>
+  <string name="sign_up_with_naver_ok">네이버를 통해 로그인 하였습니다.</string>
+  <string name="sign_up_with_kakao_ok">카카오를 통해 로그인 하였습니다.</string>
   <string name="sign_up_with_social_ok">{platform_name} 을 시작하기 전에 약간의 추가 정보가 필요합니다.</string>
   <!--Continue registration after social login-->
   <string name="complete_registration">등록 완료하기</string>
