@@ -374,15 +374,15 @@
   <string name="download_to_device">동영상 전체 다운로드 하기</string>
   <!-- Subtitle for bulk videos download view when in new or partial videos' download state -->
   <plurals name="download_total" tools:ignore="MissingTranslation">
-    <item quantity="one">{total_videos_count}개 동영상, 총 {total_videos_size} </item>
-    <item quantity="other">{total_videos_count}개 동영상, 총 {total_videos_size} </item>
+    <item quantity="one">{total_videos_count}개 동영상 </item>
+    <item quantity="other">{total_videos_count}개 동영상 </item>
   </plurals>
   <!-- Title for bulk videos download view when download is starting -->
   <string name="download_starting">다운로드 중…</string>
   <!-- Title for bulk videos download view when in downloading state -->
   <string name="downloading_videos">다운로드 중…</string>
   <!-- Subtitle for bulk videos download view when in downloading state -->
-  <string name="download_remaining" tools:ignore="MissingTranslation">{remaining_videos_count}개 남음, 총 {remaining_videos_size} </string>
+  <string name="download_remaining" tools:ignore="MissingTranslation">{remaining_videos_count}개 남음 </string>
   <!-- Title for bulk videos download view when in downloaded state -->
   <string name="download_complete">다운로드 완료</string>
 
