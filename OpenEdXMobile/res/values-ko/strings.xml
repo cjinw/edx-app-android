@@ -150,6 +150,7 @@
   <!--NOTE: TODO - not final one-->
   <string name="courseware_subtitle">동영상 및 과제 등을 학습합니다</string>
   <!--Row title of videos on dashboard screen-->
+  <string name="videos_title">동영상</string>
   <!--Row subtitle of videos on dashboard screen-->
   <!--Row of Discussion on dashboard screen-->
   <string name="discussion_title">게시판</string>
@@ -190,6 +191,7 @@
   <!--Label shown when no courseware content is available-->
   <string name="no_chapter_text">현재 해당 강좌를 이용할 수 없습니다.</string>
   <!--Label shown when no mobile-friendly videos are available in a course-->
+  <string name="no_videos_text">해당 강좌에는 동영상이 포함되어 있지 않습니다.</string>
   <!--Label shown when user is enrolled in no courses-->
   <string name="no_courses_to_display">아직 강좌에 등록하지 않았습니다.</string>
   <!--Label shown when no announcements are available for a course-->
@@ -364,13 +366,26 @@
   <!--Alert dialog title when login fails due to lack of Internet-->
   <string name="no_connectivity">연결 오류</string>
   <!--Bulk Videos Download-->
-  <!--Accessibility label of bulk download switch-->
-  <!--Title for bulk videos download view when in new or partial videos' download state-->
-  <!--Subtitle for bulk videos download view when in new or partial videos' download state-->
-  <!--Title for bulk videos download view when download is starting-->
-  <!--Title for bulk videos download view when in downloading state-->
-  <!--Subtitle for bulk videos download view when in downloading state-->
-  <!--Title for bulk videos download view when in downloaded state-->
+
+  <string name="bulk_download_switch" tools:ignore="MissingTranslation">Bulk videos download switch.</string>
+
+
+  <!-- Title for bulk videos download view when in new or partial videos' download state -->
+  <string name="download_to_device">동영상 전체 다운로드 하기</string>
+  <!-- Subtitle for bulk videos download view when in new or partial videos' download state -->
+  <plurals name="download_total" tools:ignore="MissingTranslation">
+    <item quantity="one">{total_videos_count}개 동영상, 총 {total_videos_size} </item>
+    <item quantity="other">{total_videos_count}개 동영상, 총 {total_videos_size} </item>
+  </plurals>
+  <!-- Title for bulk videos download view when download is starting -->
+  <string name="download_starting">다운로드 중…</string>
+  <!-- Title for bulk videos download view when in downloading state -->
+  <string name="downloading_videos">다운로드 중…</string>
+  <!-- Subtitle for bulk videos download view when in downloading state -->
+  <string name="download_remaining" tools:ignore="MissingTranslation">{remaining_videos_count}개 남음, 총 {remaining_videos_size} </string>
+  <!-- Title for bulk videos download view when in downloaded state -->
+  <string name="download_complete">다운로드 완료</string>
+
   <!--Accessibility label of bulk download switch, when its state is OFF and no download is happening-->
   <!--Accessibility label of bulk download switch, when its state is ON and all videos are downloading-->
   <!--Accessibility label of bulk download switch, when its state is ON and all videos have been downloaded-->
