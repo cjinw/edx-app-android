@@ -284,6 +284,8 @@
         <!-- Branch -->
         <meta-data android:name="io.branch.sdk.BranchKey" android:value="${branchKey}" />
 
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key" />
+
         <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
