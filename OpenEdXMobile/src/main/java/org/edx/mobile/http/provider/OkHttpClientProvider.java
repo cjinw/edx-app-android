@@ -99,8 +99,10 @@ public interface OkHttpClientProvider extends Provider<OkHttpClient> {
                     interceptors.add(loggingInterceptor);
                 }
                 builder.authenticator(new OauthRefreshTokenAuthenticator(context));
+
+                client = builder.build();
                 // Enable TLS 1.2 support
-                client = Tls12SocketFactory.enableTls12OnPreLollipop(builder).build();
+//                client = Tls12SocketFactory.enableTls12OnPreLollipop(builder).build();
                 clients[index] = client;
             }
             return client;
