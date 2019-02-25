@@ -82,13 +82,13 @@ public class TextUtils {
         final SpannableString termsSpan = new SpannableString(terms);
         termsSpan.setSpan(new URLSpan(TextUtils.createAppUri(
                 resources.getString(R.string.terms_of_service_title),
-                resources.getString(R.string.terms_file_link))),
+                resources.getString(R.string.terms_file_link1))),
                 0, terms.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         final SpannableString privacyPolicySpan = new SpannableString(privacyPolicy);
         privacyPolicySpan.setSpan(new URLSpan(TextUtils.createAppUri(
                 resources.getString(R.string.privacy_policy_title),
-                resources.getString(R.string.privacy_file_link))),
+                resources.getString(R.string.privacy_file_link1))),
                 0, privacyPolicy.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         final Map<String, CharSequence> keyValMap = new HashMap<>();

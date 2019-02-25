@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="eula_file_link" tools:ignore="MissingTranslation">file:///android_asset/eula_en.html</string>
-    <string name="privacy_file_link">http://www.kmooc.kr/Privacy-Policy</string>
-    <string name="terms_file_link">http://www.kmooc.kr/agreement</string>
+    <string name="eula_file_link" tools:ignore="MissingTranslation">http://www.kmooc.kr/agreement</string>
+    <string name="privacy_file_link1">http://www.kmooc.kr/Privacy-Policy</string>
+    <string name="terms_file_link1">http://www.kmooc.kr/agreement</string>
 
     <!-- Speed Test.
     Once this feature is ready, migrate this to the YAML config -->
