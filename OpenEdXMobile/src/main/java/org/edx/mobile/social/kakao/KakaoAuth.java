@@ -75,10 +75,10 @@ public class KakaoAuth extends ISocialImpl {
 
     private List<AuthType> getAuthTypes() {
         final List<AuthType> availableAuthTypes = new ArrayList<>();
-        if (Session.getAuthCodeManager().isTalkLoginAvailable()) {
+        if (Session.getCurrentSession().getAuthCodeManager().isTalkLoginAvailable()) {
             availableAuthTypes.add(AuthType.KAKAO_TALK);
         }
-        if (Session.getAuthCodeManager().isStoryLoginAvailable()) {
+        if (Session.getCurrentSession().getAuthCodeManager().isStoryLoginAvailable()) {
             availableAuthTypes.add(AuthType.KAKAO_STORY);
         }
         availableAuthTypes.add(AuthType.KAKAO_ACCOUNT);
