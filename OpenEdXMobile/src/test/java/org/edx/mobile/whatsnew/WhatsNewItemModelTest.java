@@ -1,7 +1,7 @@
-package org.edx.mobile.whatsnew;
+package com.nile.kmooc.whatsnew;
 
-import org.edx.mobile.test.BaseTest;
-import org.edx.mobile.whatsnew.WhatsNewItemModel.Platform;
+import com.nile.kmooc.test.BaseTest;
+import com.nile.kmooc.whatsnew.WhatsNewItemModel.Platform;
 import org.junit.Test;
 
 import java.util.Arrays;

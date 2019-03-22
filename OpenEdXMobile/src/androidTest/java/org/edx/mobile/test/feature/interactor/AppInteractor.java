@@ -1,4 +1,4 @@
-package org.edx.mobile.test.feature.interactor;
+package com.nile.kmooc.test.feature.interactor;
 
 import android.app.Instrumentation;
 import android.content.Intent;

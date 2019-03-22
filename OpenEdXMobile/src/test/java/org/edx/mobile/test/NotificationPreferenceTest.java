@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 
-import org.edx.mobile.model.api.CourseEntry;
-import org.edx.mobile.module.notification.EdxLocalParseChannel;
-import org.edx.mobile.module.notification.NotificationPreference;
+import com.nile.kmooc.model.api.CourseEntry;
+import com.nile.kmooc.module.notification.EdxLocalParseChannel;
+import com.nile.kmooc.module.notification.NotificationPreference;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

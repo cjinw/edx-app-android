@@ -281,15 +281,15 @@ android {
         renderscriptSupportModeEnabled true
 
         // test configuration
-        testApplicationId 'org.edx.mobile.test'
+        testApplicationId 'com.nile.kmooc.test'
 
         if (project.gradle.startParameter.taskNames.contains("screenshotTests")) {
             Map<String, String> map = new HashMap<String, String>();
-            map.put("package", "org.edx.mobile.test.screenshot");
+            map.put("package", "com.nile.kmooc.test.screenshot");
             setTestInstrumentationRunnerArguments map
         }
 
-        testInstrumentationRunner "org.edx.mobile.test.EdXTestRunner"
+        testInstrumentationRunner "com.nile.kmooc.test.EdXTestRunner"
 
         testHandleProfiling true
         testFunctionalTest true

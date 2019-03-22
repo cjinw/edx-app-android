@@ -1,4 +1,4 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
 public enum ProfileValues {
     ;

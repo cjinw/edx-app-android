@@ -1,13 +1,13 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.util.observer.BasicObservable;
-import org.edx.mobile.util.observer.Func1;
-import org.edx.mobile.util.observer.Observable;
-import org.edx.mobile.util.observer.Observables;
-import org.edx.mobile.util.observer.Observer;
+import com.nile.kmooc.util.observer.BasicObservable;
+import com.nile.kmooc.util.observer.Func1;
+import com.nile.kmooc.util.observer.Observable;
+import com.nile.kmooc.util.observer.Observables;
+import com.nile.kmooc.util.observer.Observer;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

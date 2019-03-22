@@ -1,10 +1,10 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
-import org.edx.mobile.model.Filter;
-import org.edx.mobile.model.course.BlockModel;
-import org.edx.mobile.model.course.BlockType;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.VideoBlockModel;
+import com.nile.kmooc.model.Filter;
+import com.nile.kmooc.model.course.BlockModel;
+import com.nile.kmooc.model.course.BlockType;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.model.course.VideoBlockModel;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

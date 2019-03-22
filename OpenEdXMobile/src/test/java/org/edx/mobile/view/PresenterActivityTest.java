@@ -1,11 +1,11 @@
 
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.test.GenericSuperclassUtils;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.test.GenericSuperclassUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.util.ActivityController;
 

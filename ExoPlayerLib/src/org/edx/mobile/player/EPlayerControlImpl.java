@@ -1,4 +1,4 @@
-package org.edx.mobile.player;
+package com.nile.kmooc.player;
 
 /**
  * @author rohan

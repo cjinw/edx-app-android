@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.os.Looper;
 import android.support.annotation.NonNull;
@@ -9,9 +9,9 @@ import android.support.test.runner.AndroidJUnit4;
 
 import com.facebook.testing.screenshot.Screenshot;
 
-import org.edx.mobile.loader.AsyncTaskResult;
-import org.edx.mobile.test.EdxInstrumentationTestApplication;
-import org.edx.mobile.test.GenericSuperclassUtils;
+import com.nile.kmooc.loader.AsyncTaskResult;
+import com.nile.kmooc.test.EdxInstrumentationTestApplication;
+import com.nile.kmooc.test.GenericSuperclassUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

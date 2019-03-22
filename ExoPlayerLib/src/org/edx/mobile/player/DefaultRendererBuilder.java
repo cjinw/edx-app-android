@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.edx.mobile.player;
+package com.nile.kmooc.player;
 
-import org.edx.mobile.player.PlayerDemoActivity.RendererBuilder;
-import org.edx.mobile.player.PlayerDemoActivity.RendererBuilderCallback;
+import com.nile.kmooc.player.PlayerDemoActivity.RendererBuilder;
+import com.nile.kmooc.player.PlayerDemoActivity.RendererBuilderCallback;
 
 import android.app.Activity;
 import android.media.MediaCodec;

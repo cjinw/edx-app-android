@@ -1,9 +1,9 @@
-package org.edx.mobile.test.feature.data;
+package com.nile.kmooc.test.feature.data;
 
 import com.google.gson.Gson;
 
-import org.edx.mobile.authentication.AuthResponse;
-import org.edx.mobile.model.api.ProfileModel;
+import com.nile.kmooc.authentication.AuthResponse;
+import com.nile.kmooc.model.api.ProfileModel;
 
 public enum TestValues {
     ;

@@ -1,23 +1,23 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
 import android.text.TextUtils;
 
 import com.google.gson.JsonObject;
 import com.google.inject.Injector;
 
-import org.edx.mobile.authentication.AuthResponse;
-import org.edx.mobile.authentication.LoginAPI;
-import org.edx.mobile.authentication.LoginService;
-import org.edx.mobile.course.CourseAPI;
-import org.edx.mobile.course.CourseService;
-import org.edx.mobile.http.HttpStatus;
-import org.edx.mobile.http.interceptor.JsonMergePatchInterceptor;
-import org.edx.mobile.http.interceptor.OnlyIfCachedStrippingInterceptor;
-import org.edx.mobile.http.provider.OkHttpClientProvider;
-import org.edx.mobile.model.api.ProfileModel;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.test.util.MockDataUtil;
-import org.edx.mobile.util.Config;
+import com.nile.kmooc.authentication.AuthResponse;
+import com.nile.kmooc.authentication.LoginAPI;
+import com.nile.kmooc.authentication.LoginService;
+import com.nile.kmooc.course.CourseAPI;
+import com.nile.kmooc.course.CourseService;
+import com.nile.kmooc.http.HttpStatus;
+import com.nile.kmooc.http.interceptor.JsonMergePatchInterceptor;
+import com.nile.kmooc.http.interceptor.OnlyIfCachedStrippingInterceptor;
+import com.nile.kmooc.http.provider.OkHttpClientProvider;
+import com.nile.kmooc.model.api.ProfileModel;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.test.util.MockDataUtil;
+import com.nile.kmooc.util.Config;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Ignore;

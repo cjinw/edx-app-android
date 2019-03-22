@@ -1,4 +1,4 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -6,8 +6,8 @@ import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import org.edx.mobile.databinding.FragmentUserProfileAccomplishmentsBinding;
-import org.edx.mobile.view.PresenterFragmentTest;
+import com.nile.kmooc.databinding.FragmentUserProfileAccomplishmentsBinding;
+import com.nile.kmooc.view.PresenterFragmentTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

@@ -1,16 +1,16 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.view.View;
 import android.webkit.WebView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.course.CourseAPI;
-import org.edx.mobile.exception.CourseContentNotValidException;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.course.BlockType;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.CourseStructureV1Model;
-import org.edx.mobile.model.course.HtmlBlockModel;
+import com.nile.kmooc.R;
+import com.nile.kmooc.course.CourseAPI;
+import com.nile.kmooc.exception.CourseContentNotValidException;
+import com.nile.kmooc.model.api.EnrolledCoursesResponse;
+import com.nile.kmooc.model.course.BlockType;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.model.course.CourseStructureV1Model;
+import com.nile.kmooc.model.course.HtmlBlockModel;
 import org.junit.Test;
 import org.robolectric.shadows.support.v4.SupportFragmentTestUtil;
 
@@ -19,7 +19,7 @@ import java.util.EnumSet;
 import java.util.List;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 

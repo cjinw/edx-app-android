@@ -1,4 +1,4 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -6,8 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.view.adapters.LoadingViewHolder;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.view.adapters.LoadingViewHolder;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

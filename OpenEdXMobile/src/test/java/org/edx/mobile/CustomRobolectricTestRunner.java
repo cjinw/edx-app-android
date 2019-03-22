@@ -1,4 +1,4 @@
-package org.edx.mobile;
+package com.nile.kmooc;
 
 import org.junit.runners.model.InitializationError;
 import org.robolectric.RobolectricGradleTestRunner;

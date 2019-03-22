@@ -1,11 +1,11 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
 import android.text.TextUtils;
 
 import com.google.gson.JsonObject;
 
-import org.edx.mobile.http.HttpStatus;
-import org.edx.mobile.test.BaseTestCase;
+import com.nile.kmooc.http.HttpStatus;
+import com.nile.kmooc.test.BaseTestCase;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Ignore;

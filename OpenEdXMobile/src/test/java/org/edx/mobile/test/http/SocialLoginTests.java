@@ -1,6 +1,6 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
-import org.edx.mobile.model.api.ProfileModel;
+import com.nile.kmooc.model.api.ProfileModel;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;

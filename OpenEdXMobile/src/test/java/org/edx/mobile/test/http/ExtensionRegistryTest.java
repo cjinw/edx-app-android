@@ -1,6 +1,6 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
-import org.edx.mobile.view.ExtensionRegistry;
+import com.nile.kmooc.view.ExtensionRegistry;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

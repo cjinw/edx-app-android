@@ -1,9 +1,9 @@
-package org.edx.mobile.test.feature.interactor;
+package com.nile.kmooc.test.feature.interactor;
 
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.espresso.action.ViewActions;
 
-import org.edx.mobile.R;
+import com.nile.kmooc.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;

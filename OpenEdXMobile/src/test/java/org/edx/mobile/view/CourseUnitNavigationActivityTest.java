@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,22 +13,22 @@ import android.widget.TextView;
 
 import com.google.gson.JsonObject;
 
-import org.edx.mobile.R;
-import org.edx.mobile.course.CourseAPI;
-import org.edx.mobile.http.provider.OkHttpClientProvider;
-import org.edx.mobile.model.Filter;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.course.BlockType;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.CourseStructureV1Model;
-import org.edx.mobile.model.course.DiscussionBlockModel;
-import org.edx.mobile.model.course.EncodedVideos;
-import org.edx.mobile.model.course.HtmlBlockModel;
-import org.edx.mobile.model.course.VideoBlockModel;
-import org.edx.mobile.model.course.VideoData;
-import org.edx.mobile.model.course.VideoInfo;
-import org.edx.mobile.view.adapters.CourseUnitPagerAdapter;
-import org.edx.mobile.view.custom.DisableableViewPager;
+import com.nile.kmooc.R;
+import com.nile.kmooc.course.CourseAPI;
+import com.nile.kmooc.http.provider.OkHttpClientProvider;
+import com.nile.kmooc.model.Filter;
+import com.nile.kmooc.model.api.EnrolledCoursesResponse;
+import com.nile.kmooc.model.course.BlockType;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.model.course.CourseStructureV1Model;
+import com.nile.kmooc.model.course.DiscussionBlockModel;
+import com.nile.kmooc.model.course.EncodedVideos;
+import com.nile.kmooc.model.course.HtmlBlockModel;
+import com.nile.kmooc.model.course.VideoBlockModel;
+import com.nile.kmooc.model.course.VideoData;
+import com.nile.kmooc.model.course.VideoInfo;
+import com.nile.kmooc.view.adapters.CourseUnitPagerAdapter;
+import com.nile.kmooc.view.custom.DisableableViewPager;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -47,7 +47,7 @@ import java.util.List;
 
 import static org.assertj.android.api.Assertions.assertThat;
 import static org.assertj.core.api.Java6Assertions.assertThat;
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
@@ -535,7 +535,7 @@ public class CourseUnitNavigationActivityTest extends CourseBaseActivityTest {
 
         @Test
         public void test() throws IOException {
-            config = new org.edx.mobile.util.Config(generateConfigProperties());
+            config = new com.nile.kmooc.util.Config(generateConfigProperties());
 
             FragmentManager fragmentManager = Mockito.mock(FragmentManager.class);
             EnrolledCoursesResponse courseData = Mockito.mock(EnrolledCoursesResponse.class);

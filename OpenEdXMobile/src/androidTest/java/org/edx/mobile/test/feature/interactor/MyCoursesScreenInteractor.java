@@ -1,12 +1,12 @@
-package org.edx.mobile.test.feature.interactor;
+package com.nile.kmooc.test.feature.interactor;
 
-import org.edx.mobile.R;
+import com.nile.kmooc.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isCompletelyDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.edx.mobile.test.feature.matcher.ActionBarMatcher.isInActionBar;
+import static com.nile.kmooc.test.feature.matcher.ActionBarMatcher.isInActionBar;
 import static org.hamcrest.CoreMatchers.allOf;
 
 public class MyCoursesScreenInteractor {

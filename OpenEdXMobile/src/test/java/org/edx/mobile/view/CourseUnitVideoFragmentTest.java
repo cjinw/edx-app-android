@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -10,19 +10,19 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.LinearLayout;
 
-import org.edx.mobile.R;
-import org.edx.mobile.course.CourseAPI;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.CourseStructureV1Model;
-import org.edx.mobile.model.course.VideoBlockModel;
+import com.nile.kmooc.R;
+import com.nile.kmooc.course.CourseAPI;
+import com.nile.kmooc.model.api.EnrolledCoursesResponse;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.model.course.CourseStructureV1Model;
+import com.nile.kmooc.model.course.VideoBlockModel;
 import org.junit.Test;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.support.v4.SupportFragmentTestUtil;
 
 import static org.junit.Assert.assertNotNull;
 import static org.assertj.android.api.Assertions.assertThat;
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 

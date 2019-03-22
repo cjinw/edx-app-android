@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import com.google.gson.internal.bind.util.ISO8601Utils;
 
-import org.edx.mobile.util.DateUtil;
-import org.edx.mobile.util.EmailUtil;
+import com.nile.kmooc.util.DateUtil;
+import com.nile.kmooc.util.EmailUtil;
 import org.junit.Test;
 
 import java.text.ParseException;

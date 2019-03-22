@@ -1,14 +1,14 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
 import com.google.gson.Gson;
 
-import org.edx.mobile.http.HttpStatusException;
-import org.edx.mobile.model.Page;
-import org.edx.mobile.model.PaginationData;
-import org.edx.mobile.profiles.BadgeAssertion;
-import org.edx.mobile.profiles.BadgeClass;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.user.UserService;
+import com.nile.kmooc.http.HttpStatusException;
+import com.nile.kmooc.model.Page;
+import com.nile.kmooc.model.PaginationData;
+import com.nile.kmooc.profiles.BadgeAssertion;
+import com.nile.kmooc.profiles.BadgeClass;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.user.UserService;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -21,7 +21,7 @@ import okhttp3.mockwebserver.MockWebServer;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 import static org.junit.Assert.assertEquals;
 
 public class UserApiTest extends BaseTestCase {

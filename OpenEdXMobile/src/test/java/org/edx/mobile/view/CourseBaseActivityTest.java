@@ -1,22 +1,22 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
-import org.edx.mobile.R;
-import org.edx.mobile.course.CourseAPI;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.CourseStructureV1Model;
+import com.nile.kmooc.R;
+import com.nile.kmooc.course.CourseAPI;
+import com.nile.kmooc.model.api.EnrolledCoursesResponse;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.model.course.CourseStructureV1Model;
 import org.junit.Test;
 import org.junit.runners.Parameterized.Parameter;
 import org.robolectric.Robolectric;
 import org.robolectric.util.ActivityController;
 
 import static org.assertj.android.api.Assertions.assertThat;
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 
 public abstract class CourseBaseActivityTest extends BaseFragmentActivityTest {
     /**

@@ -1,8 +1,8 @@
-package org.edx.mobile.view.custom.cc;
+package com.nile.kmooc.view.custom.cc;
 
 import java.util.List;
 
-import org.edx.mobile.player.IVideo.IClosedCaption;
+import com.nile.kmooc.player.IVideo.IClosedCaption;
 
 import android.app.DialogFragment;
 import android.content.Context;

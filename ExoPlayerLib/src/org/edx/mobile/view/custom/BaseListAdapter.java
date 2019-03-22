@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom;
+package com.nile.kmooc.view.custom;
 
 import java.util.ArrayList;
 import java.util.List;

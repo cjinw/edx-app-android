@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.net.Uri;
 
-import org.edx.mobile.util.links.EdxCourseInfoLink;
-import org.edx.mobile.util.links.EdxEnrollLink;
+import com.nile.kmooc.util.links.EdxCourseInfoLink;
+import com.nile.kmooc.util.links.EdxEnrollLink;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

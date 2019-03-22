@@ -1,6 +1,6 @@
-package org.edx.mobile.view.custom.speed;
+package com.nile.kmooc.view.custom.speed;
 
-import org.edx.mobile.view.custom.BaseListAdapter;
+import com.nile.kmooc.view.custom.BaseListAdapter;
 
 import android.content.Context;
 import android.view.View;

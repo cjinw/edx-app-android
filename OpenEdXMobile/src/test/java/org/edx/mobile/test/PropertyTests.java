@@ -1,6 +1,6 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
-import org.edx.mobile.BuildConfig;
+import com.nile.kmooc.BuildConfig;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

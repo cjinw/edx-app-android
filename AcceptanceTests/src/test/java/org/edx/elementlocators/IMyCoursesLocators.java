@@ -128,79 +128,79 @@ public interface IMyCoursesLocators {
 	 */
 
 	// Login Id's
-	String tbEmailId = "org.edx.mobile:id/email_et";
-	String tbPasswordId = "org.edx.mobile:id/password_et";
-	String btnSigninId = "org.edx.mobile:id/login_button_layout";
-	String btnLogOutId = "org.edx.mobile:id/logout_button";
+	String tbEmailId = "com.nile.kmooc:id/email_et";
+	String tbPasswordId = "com.nile.kmooc:id/password_et";
+	String btnSigninId = "com.nile.kmooc:id/login_button_layout";
+	String btnLogOutId = "com.nile.kmooc:id/logout_button";
 
 	// Header Id's
 	String btnHeaderId = "android:id/up";
 	String btnHeaderNameId = "android:id/action_bar_title";
 
 	// Find A Course id's
-	String btnFindACourseId = "org.edx.mobile:id/course_btn";
-	String btnDontSeeCoursesId = "org.edx.mobile:id/course_not_listed_tv";
-	String btnCloseId = "org.edx.mobile:id/positiveButton";
+	String btnFindACourseId = "com.nile.kmooc:id/course_btn";
+	String btnDontSeeCoursesId = "com.nile.kmooc:id/course_not_listed_tv";
+	String btnCloseId = "com.nile.kmooc:id/positiveButton";
 	String lnkFindACourseName = "https://www.edx.org/course-search?type=mobile";
 	String txtLookingForChallengeName = "Looking for a new challenge?";
 
 	// Navigation through the course to the video id's
-	String btnCourseId = "org.edx.mobile:id/course_row_layout";
-	String btnSectionSubsectionDownloadId = "org.edx.mobile:id/bulk_download_layout";
-	String btnSectionSubsectionId = "org.edx.mobile:id/chapter_row_layout";
+	String btnCourseId = "com.nile.kmooc:id/course_row_layout";
+	String btnSectionSubsectionDownloadId = "com.nile.kmooc:id/bulk_download_layout";
+	String btnSectionSubsectionId = "com.nile.kmooc:id/chapter_row_layout";
 	String btnCourseWareName = "Courseware";
 	String btnCourseInfoName = "Course Info";
 	String btnAnnouncementsName="Announcements";
 	String btnHandOutsName = "View course handouts";
-	String hlnkViewOnWebId = "org.edx.mobile:id/open_in_browser_btn";
-	String btnVideoId = "org.edx.mobile:id/video_row_layout";
-	String btnVideoDownloadId = "org.edx.mobile:id/video_start_download";
+	String hlnkViewOnWebId = "com.nile.kmooc:id/open_in_browser_btn";
+	String btnVideoId = "com.nile.kmooc:id/video_row_layout";
+	String btnVideoDownloadId = "com.nile.kmooc:id/video_start_download";
 
 	// Download Screen, Download Message Id's
-	String btnDownloadScreenId = "org.edx.mobile:id/down_arrow";
-	String btnDownloadScreenCancelId = "org.edx.mobile:id/close_btn";
-	String dlgLargeDownloadsId = "org.edx.mobile:id/dialog_layout";
-	String lbVideoName = "org.edx.mobile:id/video_title";
-	String lbVideoSize = "org.edx.mobile:id/video_size";
-	String lbVideoLength = "org.edx.mobile:id/video_playing_time";
-	String btnViewId = "org.edx.mobile:id/button_view";
-	String lstDownloadVideosId = "org.edx.mobile:id/downloads_row_layout";
-	String msgDownloadId = "org.edx.mobile:id/flying_message";
-	String downloadProgressWheel = "org.edx.mobile:id/progress_wheel";
+	String btnDownloadScreenId = "com.nile.kmooc:id/down_arrow";
+	String btnDownloadScreenCancelId = "com.nile.kmooc:id/close_btn";
+	String dlgLargeDownloadsId = "com.nile.kmooc:id/dialog_layout";
+	String lbVideoName = "com.nile.kmooc:id/video_title";
+	String lbVideoSize = "com.nile.kmooc:id/video_size";
+	String lbVideoLength = "com.nile.kmooc:id/video_playing_time";
+	String btnViewId = "com.nile.kmooc:id/button_view";
+	String lstDownloadVideosId = "com.nile.kmooc:id/downloads_row_layout";
+	String msgDownloadId = "com.nile.kmooc:id/flying_message";
+	String downloadProgressWheel = "com.nile.kmooc:id/progress_wheel";
 
 	// Video player Id's
-	String vpVideoPlayerId = "org.edx.mobile:id/preview";
-	String lbVideoNameVideoPlayerId = "org.edx.mobile:id/video_title";
-	String btnLMS = "org.edx.mobile:id/lms_btn";
-	String btnPlayPause = "org.edx.mobile:id/pause";
-	String btnRewind = "org.edx.mobile:id/rew";
-	String btnSettings = "org.edx.mobile:id/settings";
-	String btnFullScreenId = "org.edx.mobile:id/fullscreen";
-	String popupCC = "org.edx.mobile:id/tv_closedcaption";
-	String popupLanguages = "org.edx.mobile:id/row_cc_lang";
-	String txtSubtitlesId = "org.edx.mobile:id/txtSubtitles_tv";
-	String popupLanguagesCancel = "org.edx.mobile:id/tv_cc_cancel";
+	String vpVideoPlayerId = "com.nile.kmooc:id/preview";
+	String lbVideoNameVideoPlayerId = "com.nile.kmooc:id/video_title";
+	String btnLMS = "com.nile.kmooc:id/lms_btn";
+	String btnPlayPause = "com.nile.kmooc:id/pause";
+	String btnRewind = "com.nile.kmooc:id/rew";
+	String btnSettings = "com.nile.kmooc:id/settings";
+	String btnFullScreenId = "com.nile.kmooc:id/fullscreen";
+	String popupCC = "com.nile.kmooc:id/tv_closedcaption";
+	String popupLanguages = "com.nile.kmooc:id/row_cc_lang";
+	String txtSubtitlesId = "com.nile.kmooc:id/txtSubtitles_tv";
+	String popupLanguagesCancel = "com.nile.kmooc:id/tv_cc_cancel";
 
 	// No CourseWare available id
-	String lbCourseWareId = "org.edx.mobile:id/no_chapter_tv";
+	String lbCourseWareId = "com.nile.kmooc:id/no_chapter_tv";
 	String lbCourseWareName = "No courseware is currently available.";
 
 	// Last Accessed button Id
-	String btnLastAccessedId = "org.edx.mobile:id/last_viewed_tv";
+	String btnLastAccessedId = "com.nile.kmooc:id/last_viewed_tv";
 
 	// Left Navigation Panel id's
-	String txtMyCourseId = "org.edx.mobile:id/drawer_option_my_courses";
+	String txtMyCourseId = "com.nile.kmooc:id/drawer_option_my_courses";
 	String txtMyVideosName = "My Videos";
-	String txtMySettingsId="org.edx.mobile:id/drawer_option_my_settings";
+	String txtMySettingsId="com.nile.kmooc:id/drawer_option_my_settings";
 	String txtCellularDownloadName="ALLOW CELLULAR DOWNLOAD";
 	String txtCellularDownload1Name="Allow your device to download videos over your cellular connection when" 
 +"Wi-Fi is not available. Data charges may apply.";
-	String btnOkPopupId = "org.edx.mobile:id/positiveButton";
-	String btnSettingsId = "org.edx.mobile:id/wifi_setting";
+	String btnOkPopupId = "com.nile.kmooc:id/positiveButton";
+	String btnSettingsId = "com.nile.kmooc:id/wifi_setting";
 	
 	//Find Courses
 	String txtFindCourseName="Find Courses";
-	String findACoursewebView="org.edx.mobile:id/webview";
+	String findACoursewebView="com.nile.kmooc:id/webview";
 	
 
 	/*

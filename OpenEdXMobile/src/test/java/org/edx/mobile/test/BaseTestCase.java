@@ -1,4 +1,4 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.content.Context;
 
@@ -9,10 +9,10 @@ import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.util.Modules;
 
-import org.edx.mobile.core.EdxDefaultModule;
-import org.edx.mobile.logger.Logger;
-import org.edx.mobile.test.util.TimeUtilsForTests;
-import org.edx.mobile.util.Config;
+import com.nile.kmooc.core.EdxDefaultModule;
+import com.nile.kmooc.logger.Logger;
+import com.nile.kmooc.test.util.TimeUtilsForTests;
+import com.nile.kmooc.util.Config;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

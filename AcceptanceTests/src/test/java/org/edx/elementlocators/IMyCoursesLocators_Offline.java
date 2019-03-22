@@ -78,33 +78,33 @@ public interface IMyCoursesLocators_Offline {
 	// Android id
 	String btnHeaderId = "android:id/up";
 	String btnHeaderNameId = "android:id/action_bar_title";
-	String btnCourseId = "org.edx.mobile:id/course_row_layout";
+	String btnCourseId = "com.nile.kmooc:id/course_row_layout";
 	String btnCourseWareName = "Courseware";
-	String btnSectionSubsectionId = "org.edx.mobile:id/chapter_row_layout";
-	String hlnkOpenInBrowserId = "org.edx.mobile:id/open_in_browser_btn";//
-	String btnVideoId = "org.edx.mobile:id/video_row_layout";
+	String btnSectionSubsectionId = "com.nile.kmooc:id/chapter_row_layout";
+	String hlnkOpenInBrowserId = "com.nile.kmooc:id/open_in_browser_btn";//
+	String btnVideoId = "com.nile.kmooc:id/video_row_layout";
 	String txtMyCourseName = "My Courses";
-	String vpVideoPlayerId = "org.edx.mobile:id/preview";
+	String vpVideoPlayerId = "com.nile.kmooc:id/preview";
 	
-	String txtMyCourseId = "org.edx.mobile:id/drawer_option_my_courses";
-	String btnLastAccessedId = "org.edx.mobile:id/last_viewed_tv";
-	String btnLMS = "org.edx.mobile:id/lms_btn";
-	String btnPlayPause = "org.edx.mobile:id/pause";
-	String btnRewind = "org.edx.mobile:id/rew";
-	String btnSettings = "org.edx.mobile:id/settings";
-	String btnFullScreenId = "org.edx.mobile:id/fullscreen";
-	String btnLogOutId = "org.edx.mobile:id/logout_button";
-	String popupCC = "org.edx.mobile:id/tv_closedcaption";
-	String popupLanguages = "org.edx.mobile:id/cc_list";
-	String popupLanguagesCancel = "org.edx.mobile:id/tv_cc_cancel";
-	String txtSectionName="org.edx.mobile:id/txt_chapter_title";
+	String txtMyCourseId = "com.nile.kmooc:id/drawer_option_my_courses";
+	String btnLastAccessedId = "com.nile.kmooc:id/last_viewed_tv";
+	String btnLMS = "com.nile.kmooc:id/lms_btn";
+	String btnPlayPause = "com.nile.kmooc:id/pause";
+	String btnRewind = "com.nile.kmooc:id/rew";
+	String btnSettings = "com.nile.kmooc:id/settings";
+	String btnFullScreenId = "com.nile.kmooc:id/fullscreen";
+	String btnLogOutId = "com.nile.kmooc:id/logout_button";
+	String popupCC = "com.nile.kmooc:id/tv_closedcaption";
+	String popupLanguages = "com.nile.kmooc:id/cc_list";
+	String popupLanguagesCancel = "com.nile.kmooc:id/tv_cc_cancel";
+	String txtSectionName="com.nile.kmooc:id/txt_chapter_title";
 
 	// offline
-	String btnOkPopupId = "org.edx.mobile:id/positiveButton";
-	String btnDeleteId = "org.edx.mobile:id/delete_btn";
-	String cbVideoSelectId = "org.edx.mobile:id/video_select_checkbox";
-	String btnEditId = "org.edx.mobile:id/edit_btn";
-	String offlineBarId = "org.edx.mobile:id/offline_bar";
+	String btnOkPopupId = "com.nile.kmooc:id/positiveButton";
+	String btnDeleteId = "com.nile.kmooc:id/delete_btn";
+	String cbVideoSelectId = "com.nile.kmooc:id/video_select_checkbox";
+	String btnEditId = "com.nile.kmooc:id/edit_btn";
+	String offlineBarId = "com.nile.kmooc:id/offline_bar";
 
 	// IOS Locators id's
 	String btnHeaderIdiOS = "btnNavigation";

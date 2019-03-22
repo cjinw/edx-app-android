@@ -1,11 +1,11 @@
-package org.edx.mobile.test.module;
+package com.nile.kmooc.test.module;
 
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.model.download.NativeDownloadModel;
-import org.edx.mobile.module.download.DownloadFactory;
-import org.edx.mobile.module.download.IDownloadManager;
-import org.edx.mobile.module.prefs.UserPrefs;
-import org.edx.mobile.test.BaseTestCase;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.model.download.NativeDownloadModel;
+import com.nile.kmooc.module.download.DownloadFactory;
+import com.nile.kmooc.module.download.IDownloadManager;
+import com.nile.kmooc.module.prefs.UserPrefs;
+import com.nile.kmooc.test.BaseTestCase;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 
