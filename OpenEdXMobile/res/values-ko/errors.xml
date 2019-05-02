@@ -86,6 +86,8 @@
   <string name="app_version_unsupported_login_msg">앱의 현재 버전은 더이상 지원되지 않습니다. 로그인하시려면 최신 버전으로 업데이트해주세요.</string>
   <!--Error dialog message shown when the user try to register in app with un-supported version-->
   <string name="app_version_unsupported_register_msg">앱의 현재 버전은 더이상 지원되지 않습니다. 가입하시려면 최신 버전으로 업데이트해주세요.</string>
-  <!--Permission Error Messages-->
-  <!--Error message shown when a permission is not granted-->
+  <!-- Permission Error Messages -->
+
+  <!-- Error message shown when a permission is not granted -->
+  <string name="permission_not_granted">권한이 부여되지 않았습니다.</string>
 </resources>
