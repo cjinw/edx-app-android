@@ -1,5 +1,7 @@
 package com.nile.kmooc.model.course;
 
+import android.support.annotation.NonNull;
+
 public class DiscussionBlockModel extends CourseComponent {
     private DiscussionData data;
 
@@ -7,6 +9,12 @@ public class DiscussionBlockModel extends CourseComponent {
         super(blockModel, parent);
         this.data = (DiscussionData) blockModel.data;
     }
+
+    public DiscussionBlockModel(@NonNull DiscussionBlockModel other) {
+        super(other);
+        this.data = other.data;
+    }
+
 
     public DiscussionData getData() {
         return data;
