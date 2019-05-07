@@ -55,7 +55,7 @@ class AndroidHelper {
  * @return The semantic version string, or "0.0.1" if we failed to determine one.
  */
 def getVersionName = { ->
-    def description = "2.8.0";
+    def description = "2.8.1";
 //    try {
 //        def branch = System.getenv("BRANCH")
 //        if (null == branch || branch.isEmpty()) {
