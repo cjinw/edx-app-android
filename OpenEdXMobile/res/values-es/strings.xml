@@ -456,6 +456,8 @@ Si no lo recibe en algunos minutos, asegúrese de revisar su carpeta de spam.</s
   <string name="facebook_text">Facebook</string>
   <!--Google login method-->
   <string name="google_text">Google</string>
+  <!-- Naver login method -->
+  <string name="naver_text">Naver</string>
   <!--Prompt allowing user to choose email program-->
   <string name="email_chooser_header">Enviar email usando...</string>
   <!--Error shown when user attempts to send email, but has no email app-->

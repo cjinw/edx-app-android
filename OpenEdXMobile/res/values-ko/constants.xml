@@ -1,5 +1,5 @@
 <resources>
-    <string name="eula_file_link1" >http://www.kmooc.kr/agreement</string>
-    <string name="privacy_file_link1">http://www.kmooc.kr/Privacy-Policy</string>
-    <string name="terms_file_link1">http://www.kmooc.kr/agreement</string>
+    <string name="eula_file_link" >http://www.kmooc.kr/agreement</string>
+    <string name="privacy_file_link">http://www.kmooc.kr/Privacy-Policy</string>
+    <string name="terms_file_link">http://www.kmooc.kr/agreement</string>
 </resources>
