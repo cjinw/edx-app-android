@@ -537,9 +537,9 @@
     <!-- Button leading user to log in screen -->
     <string name="launch_login">Log In</string>
     <!-- Introduction text on the launch screen -->
-    <string name="launch_text" tools:ignore="MissingTranslation">Courses from the world’s best universities in your pocket.</string>
+    <string name="launch_text" tools:ignore="MissingTranslation">An Open Campus in Your Hand</string>
     <!-- Search view leading user to Find Courses screen from the launch screen upon searching some text -->
-    <string name="launch_search_courses">Search Courses</string>
+    <string name="launch_search_courses">What do you want to learn today?</string>
 
     <!-- Registration Screen -->
     <!-- Button text allowing user to show hidden optional registration fields -->
