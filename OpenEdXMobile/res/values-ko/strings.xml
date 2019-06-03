@@ -408,6 +408,8 @@
   <string name="google_text">구글</string>
   <!-- Naver login method -->
   <string name="naver_text">네이버</string>
+  <!--Kakao login method-->
+  <string name="kakao_text">카카오</string>
   <!--Prompt allowing user to choose email program-->
   <string name="email_chooser_header">...을 통해 이메일을 발송하세요</string>
   <!--Error shown when user attempts to send email, but has no email app-->

@@ -25,7 +25,8 @@ public class LoginPrefs {
         PASSWORD,
         FACEBOOK,
         GOOGLE,
-        NAVER
+        NAVER,
+        KAKAO
     }
 
     @NonNull
@@ -190,6 +191,8 @@ public class LoginPrefs {
                 return Analytics.Values.GOOGLE;
             case NAVER:
                 return Analytics.Values.NAVER;
+            case KAKAO:
+                return Analytics.Values.KAKAO;
             default:
                 throw new IllegalArgumentException(backend.name());
         }

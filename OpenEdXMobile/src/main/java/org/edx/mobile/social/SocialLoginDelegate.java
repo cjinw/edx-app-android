@@ -31,7 +31,7 @@ import java.net.HttpURLConnection;
 import java.util.HashMap;
 
 import org.edx.mobile.social.naver.NaverProvider;
-
+import org.edx.mobile.social.kakao.KakaoProvider;
 
 /**
  * Code refactored from Login Activity, for the logic of login to social site are the same
@@ -45,7 +45,7 @@ public class SocialLoginDelegate {
 
     private Activity activity;
     private MobileLoginCallback callback;
-    private ISocial google, facebook, naver;
+    private ISocial google, facebook, naver, kakao;
     private final LoginPrefs loginPrefs;
 
     private String userEmail;
@@ -78,6 +78,17 @@ public class SocialLoginDelegate {
         }
     };
 
+    private ISocial.Callback kakaoCallback = new ISocial.Callback() {
+
+        @Override
+        public void onLogin(String accessToken) {
+            logger.debug("Naver logged in; token= " + accessToken);
+            onSocialLoginSuccess(accessToken, PrefManager.Value.BACKEND_KAKAO);
+        }
+    };
+
+
+
     public SocialLoginDelegate(@NonNull Activity activity, @NonNull Bundle savedInstanceState,
                                @NonNull MobileLoginCallback callback, @NonNull Config config,
                                @NonNull LoginPrefs loginPrefs, @NonNull Feature feature) {
@@ -96,39 +107,50 @@ public class SocialLoginDelegate {
         naver = SocialFactory.getInstance(activity, SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_NAVER, config);
         naver.setCallback(naverCallback);
 
+        kakao = SocialFactory.getInstance(activity, SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_KAKAO, config);
+        kakao.setCallback(kakaoCallback);
+
         google.onActivityCreated(activity, savedInstanceState);
         facebook.onActivityCreated(activity, savedInstanceState);
         naver.onActivityCreated(activity, savedInstanceState);
+        kakao.onActivityCreated(activity, savedInstanceState);
+
     }
 
     public void onActivityDestroyed() {
         google.onActivityDestroyed(activity);
         facebook.onActivityDestroyed(activity);
         naver.onActivityDestroyed(activity);
+        kakao.onActivityDestroyed(activity);
+
     }
 
     public void onActivitySaveInstanceState(Bundle outState) {
         google.onActivitySaveInstanceState(activity, outState);
         facebook.onActivitySaveInstanceState(activity, outState);
         naver.onActivitySaveInstanceState(activity, outState);
+        kakao.onActivitySaveInstanceState(activity, outState);
     }
 
     public void onActivityStarted() {
         google.onActivityStarted(activity);
         facebook.onActivityStarted(activity);
         naver.onActivityStarted(activity);
+        kakao.onActivityStarted(activity);
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         google.onActivityResult(requestCode, resultCode, data);
         facebook.onActivityResult(requestCode, resultCode, data);
         naver.onActivityResult(requestCode, resultCode, data);
+        kakao.onActivityResult(requestCode, resultCode, data);
     }
 
     public void onActivityStopped() {
         google.onActivityStopped(activity);
         facebook.onActivityStopped(activity);
         naver.onActivityStopped(activity);
+        kakao.onActivityStopped(activity);
     }
 
     public void socialLogin(SocialFactory.SOCIAL_SOURCE_TYPE socialType) {
@@ -138,6 +160,8 @@ public class SocialLoginDelegate {
             google.login();
         else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_NAVER)
             naver.login();
+        else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_KAKAO)
+            kakao.login();
     }
 
     public void socialLogout(SocialFactory.SOCIAL_SOURCE_TYPE socialType) {
@@ -147,6 +171,8 @@ public class SocialLoginDelegate {
             google.logout();
         else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_NAVER)
             naver.logout();
+        else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_KAKAO)
+            kakao.logout();
     }
 
     /**
@@ -180,6 +206,8 @@ public class SocialLoginDelegate {
             socialProvider = new GoogleProvider((GoogleOauth2) google);
         } else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_NAVER) {
             socialProvider = new NaverProvider();
+        } else if (socialType == SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_KAKAO) {
+            socialProvider = new KakaoProvider();
         }
 
 
@@ -233,6 +261,12 @@ public class SocialLoginDelegate {
             } else if (backend.equalsIgnoreCase(PrefManager.Value.BACKEND_NAVER)) {
                 try {
                     auth = loginAPI.logInUsingNaver(accessToken);
+                } catch (LoginAPI.AccountNotLinkedException e) {
+                    throw new LoginException(makeLoginErrorMessage(e));
+                }
+            }else if (backend.equalsIgnoreCase(PrefManager.Value.BACKEND_KAKAO)) {
+                try {
+                    auth = loginAPI.logInUsingKakao(accessToken);
                 } catch (LoginAPI.AccountNotLinkedException e) {
                     throw new LoginException(makeLoginErrorMessage(e));
                 }

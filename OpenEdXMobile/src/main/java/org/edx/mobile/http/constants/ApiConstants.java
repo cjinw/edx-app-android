@@ -59,6 +59,9 @@ public class ApiConstants {
             case NAVER: {
                 return PrefManager.Value.BACKEND_NAVER;
             }
+            case KAKAO: {
+                return PrefManager.Value.BACKEND_KAKAO;
+            }
             default: {
                 throw new IllegalArgumentException(authBackend.name());
             }

@@ -102,6 +102,11 @@ public class LoginAPI {
     public AuthResponse logInUsingNaver(String accessToken) throws Exception {
         return finishSocialLogIn(accessToken, LoginPrefs.AuthBackend.NAVER);
     }
+    @NonNull
+    public AuthResponse logInUsingKakao(String accessToken) throws Exception {
+        return finishSocialLogIn(accessToken, LoginPrefs.AuthBackend.KAKAO);
+    }
+
 
     @NonNull
     private AuthResponse finishSocialLogIn(@NonNull String accessToken, @NonNull LoginPrefs.AuthBackend authBackend) throws Exception {
