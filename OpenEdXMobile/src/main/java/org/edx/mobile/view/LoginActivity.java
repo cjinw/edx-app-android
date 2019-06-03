@@ -38,6 +38,12 @@ import org.edx.mobile.util.images.ErrorUtils;
 import org.edx.mobile.view.dialog.ResetPasswordDialogFragment;
 import org.edx.mobile.view.login.LoginPresenter;
 
+import com.nhn.android.naverlogin.OAuthLogin;
+import com.nhn.android.naverlogin.OAuthLoginHandler;
+import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
+
+import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
+
 public class LoginActivity
         extends PresenterActivity<LoginPresenter, LoginPresenter.LoginViewInterface>
         implements SocialLoginDelegate.MobileLoginCallback {
@@ -75,6 +81,9 @@ public class LoginActivity
         activityLoginBinding.socialAuth.googleButton.getRoot().setOnClickListener(
                 socialLoginDelegate.createSocialButtonClickHandler(
                         SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_GOOGLE));
+        activityLoginBinding.socialAuth.naverButton.getRoot().setOnClickListener(
+                socialLoginDelegate.createSocialButtonClickHandler(
+                        SocialFactory.SOCIAL_SOURCE_TYPE.TYPE_NAVER));
 
         activityLoginBinding.loginButtonLayout.setOnClickListener(new OnClickListener() {
             @Override
@@ -128,13 +137,15 @@ public class LoginActivity
             }
 
             @Override
-            public void setSocialLoginButtons(boolean googleEnabled, boolean facebookEnabled) {
-                if (!facebookEnabled && !googleEnabled) {
+            public void setSocialLoginButtons(boolean googleEnabled, boolean facebookEnabled, boolean naverEnabled) {
+                if (!facebookEnabled && !googleEnabled && !naverEnabled) {
                     activityLoginBinding.panelLoginSocial.setVisibility(View.GONE);
                 } else if (!facebookEnabled) {
                     activityLoginBinding.socialAuth.facebookButton.getRoot().setVisibility(View.GONE);
                 } else if (!googleEnabled) {
                     activityLoginBinding.socialAuth.googleButton.getRoot().setVisibility(View.GONE);
+                } else if (!naverEnabled) {
+                    activityLoginBinding.socialAuth.naverButton.getRoot().setVisibility(View.GONE);
                 }
             }
         };
@@ -325,6 +336,7 @@ public class LoginActivity
 
         activityLoginBinding.socialAuth.facebookButton.getRoot().setClickable(enable);
         activityLoginBinding.socialAuth.googleButton.getRoot().setClickable(enable);
+        activityLoginBinding.socialAuth.naverButton.getRoot().setClickable(enable);
 
         activityLoginBinding.emailEt.setEnabled(enable);
         activityLoginBinding.passwordEt.setEnabled(enable);

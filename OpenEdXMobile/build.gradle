@@ -230,6 +230,8 @@ dependencies {
     androidTestImplementation ('org.mockito:mockito-core:1.10.19'){
         exclude group: 'org.hamcrest'
     }
+
+    implementation files('libs/naveridlogin_android_sdk_4.2.5.aar')
 }
 
 configurations {

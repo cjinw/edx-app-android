@@ -24,7 +24,8 @@ public class LoginPrefs {
     public enum AuthBackend {
         PASSWORD,
         FACEBOOK,
-        GOOGLE
+        GOOGLE,
+        NAVER
     }
 
     @NonNull
@@ -187,6 +188,8 @@ public class LoginPrefs {
                 return Analytics.Values.FACEBOOK;
             case GOOGLE:
                 return Analytics.Values.GOOGLE;
+            case NAVER:
+                return Analytics.Values.NAVER;
             default:
                 throw new IllegalArgumentException(backend.name());
         }

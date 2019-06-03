@@ -182,6 +182,10 @@ public abstract class MainApplication extends MultiDexApplication {
             FacebookSdk.sdkInitialize(getApplicationContext());
         }
 
+        if (config.getNaverConfig().isEnabled()) {
+            org.edx.mobile.social.naver.NaverAuth.setClientKeys(config.getNaverConfig().getClientId(), config.getNaverConfig().getClientSecret());
+        }
+
         if (PermissionsUtil.checkPermissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, this)) {
             deleteExtraDownloadedFiles();
         }
