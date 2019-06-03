@@ -439,7 +439,7 @@ android {
             signingConfig signingConfigs.releasekey
             applicationVariants.all { variant ->
                 variant.outputs.all { output ->
-                    project.ext { appName = 'edx' }
+                    project.ext { appName = 'kmooc' }
                     outputFileName  = "${project.ext.appName}-${variant.buildType.name}-${versionName}.apk"
                 }
             }
