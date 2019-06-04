@@ -37,9 +37,9 @@
   <string name="share_course_message">Estoy tomando un curso en {platform_name}! Dale un vistazo:</string>
   <!--Settings Page-->
   <!--Label for wifi only switch-->
-  <string name="settings_wifi_top">Descargar solo por Wi-Fi</string>
-  <!--Label explaining what wifi only means in detail-->
-  <string name="settings_wifi_bottom">Sólo descargar contenido cuando el Wifi está encendido</string>
+  <string name="settings_wifi_top">Enable cellular download/stream</string>
+  <!-- Label explaining what wifi only means in detail -->
+  <string name="settings_wifi_bottom">Enable downloads/stream via cellular network connections</string>
   <!--Label for the Download to sd-card setting-->
   <!--Label explaining the download location setting in detail-->
   <!--Certificate Page-->

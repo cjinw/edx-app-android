@@ -77,14 +77,14 @@ public class SettingsFragment extends BaseFragment {
                 getActivity().getBaseContext(), PrefManager.Pref.WIFI);
 
         wifiSwitch.setOnCheckedChangeListener(null);
-        wifiSwitch.setChecked(wifiPrefManager.getBoolean(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, true));
+        wifiSwitch.setChecked(wifiPrefManager.getBoolean(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, false));
         wifiSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, true);
-                    wifiPrefManager.put(PrefManager.Key.DOWNLOAD_OFF_WIFI_SHOW_DIALOG_FLAG, true);
+                if (!isChecked) {
+                    wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, false);
+                    wifiPrefManager.put(PrefManager.Key.DOWNLOAD_OFF_WIFI_SHOW_DIALOG_FLAG, false);
                 } else {
                     showWifiDialog();
                 }
@@ -127,7 +127,7 @@ public class SettingsFragment extends BaseFragment {
                         try {
                             PrefManager wifiPrefManager = new PrefManager
                                     (getActivity().getBaseContext(), PrefManager.Pref.WIFI);
-                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, false);
+                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, true);
                             updateWifiSwitch();
                         } catch (Exception ex) {
                             logger.error(ex);
@@ -139,8 +139,8 @@ public class SettingsFragment extends BaseFragment {
                         try {
                             PrefManager wifiPrefManager = new PrefManager(
                                     getActivity().getBaseContext(), PrefManager.Pref.WIFI);
-                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, true);
-                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_OFF_WIFI_SHOW_DIALOG_FLAG, true);
+                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_ONLY_ON_WIFI, false);
+                            wifiPrefManager.put(PrefManager.Key.DOWNLOAD_OFF_WIFI_SHOW_DIALOG_FLAG, false);
 
                             updateWifiSwitch();
                         } catch (Exception ex) {

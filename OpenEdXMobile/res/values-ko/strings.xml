@@ -107,6 +107,7 @@
   <!--Settings screen version-->
   <string name="label_version">앱 버전</string>
   <!--Button text to show user Settings screen-->
+  <string name="label_settings">설정</string>
   <!--Title of Account screen-->
   <!--Help Dialog Place Holder messages-->
   <!--Reset password alert dialog title-->
@@ -116,14 +117,14 @@
   <!--Reset password alert dialog title-->
   <string name="title_reset_password_failed">비밀번호 재설정 오류</string>
   <!--Label for switch controlling whether users permit downloading using cellular data or only wifi-->
-  <string name="wifi_dialog_title_help">셀룰러 데이터 다운로드 허용</string>
+  <string name="wifi_dialog_title_help">3G/LTE 연결시 다운로드 허용하기</string>
   <!--Password reset sent succesfully alert-->
   <string name="success_dialog_message_help">이메일 주소로 비밀번호 재설정 안내를 발송하였습니다.
 몇분 내로 이메일을 확인할 수 없다면 스팸 보관함을 확인해보세요.</string>
   <!--Password reset dialog prompt-->
   <string name="confirm_dialog_message_help">계정 이메일 주소를 입력하시면, 비밀번호를 재설정하기위한 안내메일이 발송됩니다.</string>
   <!--Label explaining toggle for cellular data access-->
-  <string name="wifi_dialog_message_help">셀룰러 연결시 동영상 다운로드를 허용합니다. 데이터 요금이 결제될 수 있으니 주의하십시오.</string>
+  <string name="wifi_dialog_message_help">와이파이가 연결되지 않았을 때 3G/LTE를 사용한 동영상 다운로드를 허용합니다. 데이터 요금이 청구될 수 있습니다.</string>
   <!--Info message text for to let use know how many videos were deleted-->
   <plurals name="delete_video_snackbar_msg">
     <item quantity="other">%s개 동영상이 삭제됨</item>
