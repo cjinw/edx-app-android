@@ -24,7 +24,6 @@
   <string name="cannot_show_dashboard">대시보드를 표시할 수 없습니다.</string>
   <!--Error message shown when browser cannot handle request for given web url-->
   <!--Subjects Discovery-->
-  <string name="label_discover">강좌찾기</string>
   <!--Label for browsing courses by a subject-->
   <!--Button's Label for viewing all subjects-->
   <!--Label for searching subjects-->
@@ -72,7 +71,7 @@
   <!--Generic error during log in-->
   <string name="error_heading">로그인 중에 다음 오류가 발생하였습니다</string>
   <!--Error during log in.-->
-  <string name="login_failed">이메일 주소/아이디와 비밀번호가 정확한지 확인해주세요. </string>
+  <string name="login_failed">이메일/아이디 또는 비밀번호를 정확히 입력하셨는지 확인해주세요.\nSNS계정 로그인을 시도하셨다면, 먼저 kmooc.kr 내 계정설정에서 계정연동을 해주세요.</string>
 
   <!-- License Agreement related string on Login and Regiser screens -->
   <!-- Create account agreement. Followed by list of agreement names like "End User License Agreement" -->
@@ -80,7 +79,7 @@
   <!-- Sign In agreement. Followed by list of agreement names like "End User License Agreement" -->
   <string name="by_signing_in">이 앱에 로그인 함으로서 다 약관에 동의하게 됩니다.\n{tos_and_honor_code}\n{privacy_policy}</string>
   <!-- Label for End User License Agreement -->
-  <string name="licensing_agreement">{platform_name} End User License Agreement</string>
+  <string name="licensing_agreement">{platform_name} 서비스 이용약</string>
   <!-- Label for Terms of Service and Honor Code -->
   <string name="tos_and_honor_code">{platform_name} 서비스 이용약관</string>
 
@@ -96,13 +95,15 @@
   <!--Content description for edit profile button-->
   <string name="open_profile_button">프로필 열기</string>
   <!--Title of user's course list screen-->
+  <string name="label_my_courses">내 강의실</string>
   <!--Title of user's program list screen-->
+  <string name="label_discover">강좌찾기</string>
+  <string name="label_discovery">강좌찾기</string>
   <!--Title of native Find Courses Screen-->
   <string name="label_find_courses">강좌 목록</string>
   <!--Title of webview based Find Courses Screen-->
   <!--Title of Degrees tab on Discovery screen-->
   <!--Title of Find Courses tab on Main Dashboard screen-->
-  <string name="label_discovery">강좌찾기</string>
   <!--Button allowing users to send an email for feedback-->
   <string name="label_submit_feedback">문의하기</string>
   <!--Toggle switch on state label-->
@@ -114,11 +115,12 @@
   <!--Settings screen title-->
   <string name="settings_txt">설정</string>
   <!--Settings screen version-->
-  <string name="label_version">앱 버전</string>
+  <string name="label_version">Ver</string>
   <!--Butdiston text to show user Settings screen-->
   <string name="label_settings">설정</string>
   <!--Title of Account screen-->
   <!--Help Dialog Place Holder messages-->
+  <string name="title_account">계정</string>
   <!--Reset password alert dialog title-->
   <string name="confirm_dialog_title_help">비밀번호 초기화</string>
   <!--Reset password alert dialog message-->
@@ -154,6 +156,7 @@
   <!--NOTE: TODO - not final one-->
   <string name="courseware_subtitle">동영상 및 과제 등을 학습합니다</string>
   <!--Row title of videos on dashboard screen-->
+  <string name="videos_title">동영상</string>
   <!--Row subtitle of videos on dashboard screen-->
   <!--Row of Discussion on dashboard screen-->
   <string name="discussion_title">게시판</string>
@@ -169,6 +172,7 @@
   <string name="announcement_title">공지사항</string>
   <!--Title text for the important dates section on the course dashboard-->
   <!--Title text for the additional resources section on the tabular course dashboard-->
+  <string name="resources_title">기타</string>
   <!--Row of announcement on dashboard screen-->
   <!--NOTE: TODO - not final one-->
   <string name="announcement_subtitle">강좌의 최근 소식이 게시됩니다</string>
@@ -178,12 +182,11 @@
   <!--Label indicating new course content has been downloaded-->
   <string name="new_course_content">새 강좌 콘텐츠</string>
   <!--Label for date when course starts-->
-  <!--Label for course that has ended-->
-  <!--Label for date when course is ending-->
-  <!--Label for date when course is expiring in a specific time frame like in 2 days-->
-  <!--Label for date when course is expiring on a specific date like on December 5-->
-  <!--Label for date when course expired a specific time ago like 2 days ago-->
-  <!--Label for date when course expired on a specific date like on November 5-->
+  <string name="label_starting">개강예정(개강일:{date}일)</string>
+  <!-- Label for course that has ended -->
+  <string name="label_ended">종료(종강일:{date}일)</string>
+  <!-- Label for date when course is ending -->
+  <string name="label_ending">진행중(종강일:{date}일)</string>
   <!--Course Details-->
   <!--Accessible content description of label for course content-->
   <string name="course_content">강좌 콘텐츠</string>
@@ -199,7 +202,7 @@
   <!--Label shown when no announcements are available for a course-->
   <string name="no_announcements_to_display">현재 이 강좌에 공지사항이 없습니다.</string>
   <!--Label shown when no handouts are available for a course-->
-  <string name="no_handouts_to_display">현재 이 강좌에 유인물이 없습니다.</string>
+  <string name="no_handouts_to_display">현재 이 강좌에 학습자료가 없습니다.</string>
   <!--Label shown when no important dates are available for a course-->
   <!--Title of the screen where user can delete videos-->
   <!--Label for a course item's due date for same day-->
@@ -245,7 +248,7 @@
   <!--Used for putting authorLabel into parenthesis e.g. (Community TA) or (Staff)-->
   <string name="discussion_post_author_label_attribution">({text})</string>
   <!--Label indicating the number of replies on a post e.g. 47 total-->
-  <string name="discussion_post_total_replies">{total_replies} 계</string>
+  <string name="discussion_post_total_replies">{total_replies} 개</string>
   <!--Label indicating the last time a post was updated e.g. Last post: Jun 22, 2016-->
   <string name="discussion_post_last_interaction_date">최신 글: {date}</string>
   <!--Discussion Responses-->
@@ -370,6 +373,7 @@
   <!--Bulk Videos Download-->
   <!--Accessibility label of bulk download switch-->
   <!--Title for bulk videos download view when in new or partial videos' download state-->
+  <string name="download_to_device">동영상 전체 다운로드 하기</string>
   <!--Subtitle for bulk videos download view when in new or partial videos' download state-->
   <plurals name="download_total">
     <item quantity="one">{total_videos_count}개 동영상</item>
@@ -382,6 +386,8 @@
   <!-- Subtitle for bulk videos download view when in downloading state -->
   <string name="download_remaining">{remaining_videos_count}개 남음</string>
   <!--Accessibility label of full bulk download view when videos are being downloaded-->
+  <string name="download_complete">다운로드 완료</string>
+
   <!--Wifi New Message-->
   <!--Toggle to allow downloads using cellular data-->
   <string name="allow">허용</string>
@@ -391,6 +397,7 @@
   <!--Label for closed captions in video player-->
   <string name="lbl_closed_caption">자막</string>
   <!--Label for video playback speed in video player-->
+    <string name="lbl_video_speed" tools:ignore="MissingTranslation">속도</string>
   <!--Label for None captions selected-->
   <!--Accessibility Label for Video Player-->
   <string name="video_player">동영상 플레이어</string>
@@ -415,6 +422,7 @@
   <!--Button label to bring up course finder-->
   <string name="find_course_text">새로운 강좌를 학습하고 싶으십니까?</string>
   <!--Button label to bring up course finder-->
+  <string name="find_course_btn_text">새로운 강좌 찾아보기</string>
   <!--Message between sign in button and social login buttons-->
   <string name="or_sign_in_with">또는 다음을 통해 로그인하세요</string>
   <!--Facebook login method-->
@@ -430,6 +438,7 @@
   <!--Error shown when user attempts to send email, but has no email app-->
   <string name="email_client_not_present">이메일 클라이언트가 설치되지 않았습니다</string>
   <!--Search for a course prompt-->
+  <string name="search_for_courses">강좌 찾기</string>
   <!--Search for a program prompt-->
   <!--Search for a degree prompt-->
   <!--Landing Activity text-->
@@ -470,7 +479,7 @@
   <!--Continue registration after social login-->
   <string name="complete_registration">등록 완료하기</string>
   <!--Message shown when enrolling in a course fails-->
-  <string name="enrollment_failure">현재 이 강좌에 등록할 수 없습니다</string>
+  <string name="enrollment_failure">해당 강좌는 아직 미개강 강좌이므로, 진행 중일 때 수강신청 해주세요.</string>
   <!--Alert dialog button allowing user to repeat their attempted action-->
   <string name="try_again">재시도</string>
   <!--Registration error-->
@@ -537,13 +546,13 @@
   <!--This text is shown in place of the "About Me" text if the user has not filled in their "About Me"-->
   <string name="profile_incomplete_about_me">“자기소개” 정보가 없습니다.</string>
   <!--Window title for edit profile screen-->
-  <string name="edit_user_profile_title">프로필 편집</string>
+  <string name="edit_user_profile_title">프로필 편집하기</string>
   <!--How most profile fields are formatted when viewing the edit screen-->
   <string name="edit_user_profile_field">{label}: {value}</string>
   <!--Default placeholder if a profile field is blank-->
   <string name="edit_user_profile_field_placeholder">선택</string>
   <!--Button that saves changes to a profile text field-->
-  <string name="edit_user_profile_textarea_submit_button">제출</string>
+  <string name="edit_user_profile_textarea_submit_button">확인</string>
   <!--An option that will set the user profile's primary language to the language of their device's configured locale-->
   <string name="edit_user_profile_current_language">현재 언어: {current_language}</string>
   <!--An option that will set the user profile's location to the country of their device's configured locale-->

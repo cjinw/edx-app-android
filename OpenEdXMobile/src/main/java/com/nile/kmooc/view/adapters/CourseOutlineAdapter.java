@@ -583,7 +583,7 @@ public class CourseOutlineAdapter extends BaseAdapter {
             formattedDate += " " + TimeZoneUtils.getTimeZoneAbbreviation(TimeZone.getDefault());
             return formattedDate;
         } else {
-            dateFormat = new SimpleDateFormat("MMM dd, yyyy");
+            dateFormat = new SimpleDateFormat("MMM dd");
             return ResourceUtil.getFormattedString(context.getResources(), R.string.due_date_past_future,
                     "due_date", dateFormat.format(dueDate)).toString();
         }

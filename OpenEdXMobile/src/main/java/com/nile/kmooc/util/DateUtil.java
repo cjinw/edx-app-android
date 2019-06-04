@@ -50,7 +50,7 @@ public class DateUtil {
      */
     public static String formatCourseNotStartedDate(String date) {
         try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM dd, yyyy");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy MMMM dd");
             Date startDate = DateUtil.convertToDate(date);
 
             String formattedDate = dateFormat.format(startDate);
