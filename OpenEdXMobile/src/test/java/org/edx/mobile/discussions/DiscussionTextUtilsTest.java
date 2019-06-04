@@ -1,4 +1,4 @@
-package org.edx.mobile.discussions;
+package com.nile.kmooc.discussions;
 
 import android.graphics.Typeface;
 import android.text.Spanned;
@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import org.apache.commons.lang.time.DateUtils;
-import org.edx.mobile.R;
-import org.edx.mobile.discussion.DiscussionTextUtils;
-import org.edx.mobile.discussion.IAuthorData;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.test.util.TimeUtilsForTests;
-import org.edx.mobile.util.ResourceUtil;
+import com.nile.kmooc.R;
+import com.nile.kmooc.discussion.DiscussionTextUtils;
+import com.nile.kmooc.discussion.IAuthorData;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.test.util.TimeUtilsForTests;
+import com.nile.kmooc.util.ResourceUtil;
 import org.junit.Test;
 import org.mockito.Mockito;
 

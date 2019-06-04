@@ -1,8 +1,8 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.net.Uri;
 
-import org.edx.mobile.util.links.WebViewLink;
+import com.nile.kmooc.util.links.WebViewLink;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

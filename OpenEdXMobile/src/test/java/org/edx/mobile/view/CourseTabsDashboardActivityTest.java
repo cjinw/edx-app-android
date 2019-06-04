@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import org.junit.Ignore;
 import org.junit.Test;

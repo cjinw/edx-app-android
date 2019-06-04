@@ -1,14 +1,14 @@
-package org.edx.mobile.util;
+package com.nile.kmooc.util;
 
 import android.content.Context;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import org.edx.mobile.R;
-import org.edx.mobile.test.BaseTest;
-import org.edx.mobile.whatsnew.WhatsNewItemModel;
-import org.edx.mobile.whatsnew.WhatsNewModel;
+import com.nile.kmooc.R;
+import com.nile.kmooc.test.BaseTest;
+import com.nile.kmooc.whatsnew.WhatsNewItemModel;
+import com.nile.kmooc.whatsnew.WhatsNewModel;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 

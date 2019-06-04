@@ -1,9 +1,9 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
-import org.edx.mobile.module.analytics.AnalyticsRegistry;
-import org.edx.mobile.module.prefs.UserPrefs;
-import org.edx.mobile.test.PresenterTest;
-import org.edx.mobile.util.observer.CachingObservable;
+import com.nile.kmooc.module.analytics.AnalyticsRegistry;
+import com.nile.kmooc.module.prefs.UserPrefs;
+import com.nile.kmooc.test.PresenterTest;
+import com.nile.kmooc.util.observer.CachingObservable;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

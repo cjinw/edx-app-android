@@ -1,4 +1,4 @@
-package org.edx.mobile.event;
+package com.nile.kmooc.event;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -6,10 +6,10 @@ import android.support.annotation.Nullable;
 
 import com.google.gson.internal.bind.util.ISO8601Utils;
 
-import org.edx.mobile.BuildConfig;
-import org.edx.mobile.http.interceptor.NewVersionBroadcastInterceptor;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.util.Version;
+import com.nile.kmooc.BuildConfig;
+import com.nile.kmooc.http.interceptor.NewVersionBroadcastInterceptor;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.util.Version;
 import org.junit.AssumptionViolatedException;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -32,11 +32,11 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
-import static org.edx.mobile.http.HttpStatus.ACCEPTED;
-import static org.edx.mobile.http.HttpStatus.UPGRADE_REQUIRED;
-import static org.edx.mobile.http.interceptor.NewVersionBroadcastInterceptor.HEADER_APP_LATEST_VERSION;
-import static org.edx.mobile.http.interceptor.NewVersionBroadcastInterceptor.HEADER_APP_VERSION_LAST_SUPPORTED_DATE;
-import static org.edx.mobile.test.util.TimeUtilsForTests.DEFAULT_TIME;
+import static com.nile.kmooc.http.HttpStatus.ACCEPTED;
+import static com.nile.kmooc.http.HttpStatus.UPGRADE_REQUIRED;
+import static com.nile.kmooc.http.interceptor.NewVersionBroadcastInterceptor.HEADER_APP_LATEST_VERSION;
+import static com.nile.kmooc.http.interceptor.NewVersionBroadcastInterceptor.HEADER_APP_VERSION_LAST_SUPPORTED_DATE;
+import static com.nile.kmooc.test.util.TimeUtilsForTests.DEFAULT_TIME;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

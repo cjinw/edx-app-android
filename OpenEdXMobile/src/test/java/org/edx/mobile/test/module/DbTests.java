@@ -1,17 +1,17 @@
-package org.edx.mobile.test.module;
+package com.nile.kmooc.test.module;
 
 import com.google.inject.Injector;
 
-import org.edx.mobile.model.VideoModel;
-import org.edx.mobile.model.api.ProfileModel;
-import org.edx.mobile.model.db.DownloadEntry;
-import org.edx.mobile.model.db.DownloadEntry.DownloadedState;
-import org.edx.mobile.model.db.DownloadEntry.WatchedState;
-import org.edx.mobile.module.db.DataCallback;
-import org.edx.mobile.module.db.IDatabase;
-import org.edx.mobile.module.db.impl.DatabaseFactory;
-import org.edx.mobile.module.prefs.LoginPrefs;
-import org.edx.mobile.test.BaseTestCase;
+import com.nile.kmooc.model.VideoModel;
+import com.nile.kmooc.model.api.ProfileModel;
+import com.nile.kmooc.model.db.DownloadEntry;
+import com.nile.kmooc.model.db.DownloadEntry.DownloadedState;
+import com.nile.kmooc.model.db.DownloadEntry.WatchedState;
+import com.nile.kmooc.module.db.DataCallback;
+import com.nile.kmooc.module.db.IDatabase;
+import com.nile.kmooc.module.db.impl.DatabaseFactory;
+import com.nile.kmooc.module.prefs.LoginPrefs;
+import com.nile.kmooc.test.BaseTestCase;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 

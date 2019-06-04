@@ -1,4 +1,4 @@
-package org.edx.mobile.shadows;
+package com.nile.kmooc.shadows;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;

@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -6,8 +6,8 @@ import android.net.NetworkInfo;
 
 import com.google.inject.Injector;
 
-import org.edx.mobile.core.IEdxEnvironment;
-import org.edx.mobile.test.http.HttpBaseTestCase;
+import com.nile.kmooc.core.IEdxEnvironment;
+import com.nile.kmooc.test.http.HttpBaseTestCase;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.robolectric.RuntimeEnvironment;

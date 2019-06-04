@@ -1,13 +1,13 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import com.google.gson.JsonObject;
 import com.google.inject.Injector;
 
-import org.edx.mobile.authentication.AuthResponse;
-import org.edx.mobile.http.HttpStatus;
-import org.edx.mobile.http.authenticator.OauthRefreshTokenAuthenticator;
-import org.edx.mobile.module.prefs.LoginPrefs;
-import org.edx.mobile.test.util.MockDataUtil;
+import com.nile.kmooc.authentication.AuthResponse;
+import com.nile.kmooc.http.HttpStatus;
+import com.nile.kmooc.http.authenticator.OauthRefreshTokenAuthenticator;
+import com.nile.kmooc.module.prefs.LoginPrefs;
+import com.nile.kmooc.test.util.MockDataUtil;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -23,7 +23,7 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 
-import static org.edx.mobile.test.util.OkHttpTestUtil.defaultClient;
+import static com.nile.kmooc.test.util.OkHttpTestUtil.defaultClient;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

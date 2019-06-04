@@ -1,14 +1,14 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.widget.TextView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.databinding.FragmentUserProfileBinding;
-import org.edx.mobile.util.images.ErrorUtils;
-import org.edx.mobile.view.PresenterFragmentTest;
-import org.edx.mobile.view.adapters.StaticFragmentPagerAdapter;
+import com.nile.kmooc.R;
+import com.nile.kmooc.databinding.FragmentUserProfileBinding;
+import com.nile.kmooc.util.images.ErrorUtils;
+import com.nile.kmooc.view.PresenterFragmentTest;
+import com.nile.kmooc.view.adapters.StaticFragmentPagerAdapter;
 import org.junit.Before;
 import org.junit.Test;
 

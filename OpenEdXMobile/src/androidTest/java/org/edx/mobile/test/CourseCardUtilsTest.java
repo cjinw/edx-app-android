@@ -1,12 +1,12 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.content.Context;
 import android.support.test.runner.AndroidJUnit4;
 
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.model.api.StartType;
-import org.edx.mobile.util.DateUtil;
-import org.edx.mobile.util.images.CourseCardUtils;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.model.api.StartType;
+import com.nile.kmooc.util.DateUtil;
+import com.nile.kmooc.util.images.CourseCardUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

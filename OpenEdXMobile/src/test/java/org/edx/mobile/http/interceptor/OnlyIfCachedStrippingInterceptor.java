@@ -1,4 +1,4 @@
-package org.edx.mobile.http.interceptor;
+package com.nile.kmooc.http.interceptor;
 
 import java.io.IOException;
 import java.util.regex.Matcher;

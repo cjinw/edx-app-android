@@ -1,9 +1,9 @@
-package org.edx.mobile.test.feature.data;
+package com.nile.kmooc.test.feature.data;
 
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.util.Config;
-import org.edx.mobile.util.ResourceUtil;
+import com.nile.kmooc.util.Config;
+import com.nile.kmooc.util.ResourceUtil;
 
 import java.util.UUID;
 

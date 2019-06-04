@@ -1,9 +1,9 @@
-package org.edx.mobile.test.feature;
+package com.nile.kmooc.test.feature;
 
 import android.support.test.runner.AndroidJUnit4;
 
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.core.EdxEnvironment;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.core.EdxEnvironment;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 

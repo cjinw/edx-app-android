@@ -1,10 +1,10 @@
-package org.edx.mobile.test.feature;
+package com.nile.kmooc.test.feature;
 
-import org.edx.mobile.authentication.LoginAPI;
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.module.prefs.LoginPrefs;
-import org.edx.mobile.test.feature.data.TestValues;
-import org.edx.mobile.test.feature.interactor.AppInteractor;
+import com.nile.kmooc.authentication.LoginAPI;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.module.prefs.LoginPrefs;
+import com.nile.kmooc.test.feature.data.TestValues;
+import com.nile.kmooc.test.feature.interactor.AppInteractor;
 import org.junit.Test;
 
 public class LaunchFeatureTest extends FeatureTest {

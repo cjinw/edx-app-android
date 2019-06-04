@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.base.BaseFragmentActivity;
+import com.nile.kmooc.R;
+import com.nile.kmooc.base.BaseFragmentActivity;
 import org.junit.Test;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;

@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.content.Intent;
 import android.net.Uri;
 
-import org.edx.mobile.util.BrowserUtil;
+import com.nile.kmooc.util.BrowserUtil;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 

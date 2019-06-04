@@ -1,18 +1,18 @@
-package org.edx.mobile.profiles;
+package com.nile.kmooc.profiles;
 
 import android.net.Uri;
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.event.AccountDataLoadedEvent;
-import org.edx.mobile.event.ProfilePhotoUpdatedEvent;
-import org.edx.mobile.model.api.ProfileModel;
-import org.edx.mobile.module.prefs.UserPrefs;
-import org.edx.mobile.test.BaseTest;
-import org.edx.mobile.user.Account;
-import org.edx.mobile.user.LanguageProficiency;
-import org.edx.mobile.user.ProfileImage;
-import org.edx.mobile.user.UserService;
-import org.edx.mobile.util.observer.Observer;
+import com.nile.kmooc.event.AccountDataLoadedEvent;
+import com.nile.kmooc.event.ProfilePhotoUpdatedEvent;
+import com.nile.kmooc.model.api.ProfileModel;
+import com.nile.kmooc.module.prefs.UserPrefs;
+import com.nile.kmooc.test.BaseTest;
+import com.nile.kmooc.user.Account;
+import com.nile.kmooc.user.LanguageProficiency;
+import com.nile.kmooc.user.ProfileImage;
+import com.nile.kmooc.user.UserService;
+import com.nile.kmooc.util.observer.Observer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

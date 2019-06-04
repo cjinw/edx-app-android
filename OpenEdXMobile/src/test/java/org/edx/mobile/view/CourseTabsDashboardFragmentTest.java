@@ -1,18 +1,18 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-import org.edx.mobile.R;
-import org.edx.mobile.deeplink.Screen;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
+import com.nile.kmooc.R;
+import com.nile.kmooc.deeplink.Screen;
+import com.nile.kmooc.model.api.EnrolledCoursesResponse;
 import org.junit.Test;
 import org.robolectric.shadows.support.v4.SupportFragmentTestUtil;
 
 import roboguice.activity.RoboFragmentActivity;
 
 import static org.assertj.android.api.Assertions.assertThat;
-import static org.edx.mobile.http.util.CallUtil.executeStrict;
+import static com.nile.kmooc.http.util.CallUtil.executeStrict;
 import static org.junit.Assert.assertNotNull;
 
 public class CourseTabsDashboardFragmentTest extends UiTest {

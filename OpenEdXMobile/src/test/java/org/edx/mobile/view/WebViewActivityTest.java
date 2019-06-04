@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -8,9 +8,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.view.dialog.WebViewActivity;
+import com.nile.kmooc.R;
+import com.nile.kmooc.test.BaseTestCase;
+import com.nile.kmooc.view.dialog.WebViewActivity;
 import org.junit.Test;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;

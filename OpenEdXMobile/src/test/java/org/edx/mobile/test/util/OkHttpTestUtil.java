@@ -1,4 +1,4 @@
-package org.edx.mobile.test.util;
+package com.nile.kmooc.test.util;
 
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;

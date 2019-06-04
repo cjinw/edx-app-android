@@ -1,11 +1,11 @@
-package org.edx.mobile.test.http;
+package com.nile.kmooc.test.http;
 
 import android.content.Context;
 
-import org.edx.mobile.http.interceptor.GzipRequestInterceptor;
-import org.edx.mobile.http.HttpStatus;
-import org.edx.mobile.http.interceptor.OauthHeaderRequestInterceptor;
-import org.edx.mobile.test.BaseTestCase;
+import com.nile.kmooc.http.interceptor.GzipRequestInterceptor;
+import com.nile.kmooc.http.HttpStatus;
+import com.nile.kmooc.http.interceptor.OauthHeaderRequestInterceptor;
+import com.nile.kmooc.test.BaseTestCase;
 import org.junit.Ignore;
 import org.robolectric.RuntimeEnvironment;
 

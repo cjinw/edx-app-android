@@ -1,6 +1,6 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
-import org.edx.mobile.util.WeakList;
+import com.nile.kmooc.util.WeakList;
 import org.junit.Before;
 import org.junit.Test;
 

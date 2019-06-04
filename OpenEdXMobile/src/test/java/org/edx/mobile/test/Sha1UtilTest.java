@@ -1,6 +1,6 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
-import org.edx.mobile.util.Sha1Util;
+import com.nile.kmooc.util.Sha1Util;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

@@ -1,7 +1,7 @@
-package org.edx.mobile.util;
+package com.nile.kmooc.util;
 
-import org.edx.mobile.logger.Logger;
-import org.edx.mobile.test.BaseTestCase;
+import com.nile.kmooc.logger.Logger;
+import com.nile.kmooc.test.BaseTestCase;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 public class UrlUtilTest extends BaseTestCase {
-    private final Logger logger = new org.edx.mobile.logger.Logger(getClass().getName());
+    private final Logger logger = new com.nile.kmooc.logger.Logger(getClass().getName());
 
     @Test
     public void testRelativeUrlResolves() {

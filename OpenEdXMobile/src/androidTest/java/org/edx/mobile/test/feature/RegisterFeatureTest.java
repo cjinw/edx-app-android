@@ -1,7 +1,7 @@
-package org.edx.mobile.test.feature;
+package com.nile.kmooc.test.feature;
 
-import org.edx.mobile.test.feature.data.Credentials;
-import org.edx.mobile.test.feature.interactor.AppInteractor;
+import com.nile.kmooc.test.feature.data.Credentials;
+import com.nile.kmooc.test.feature.interactor.AppInteractor;
 import org.junit.Test;
 
 public class RegisterFeatureTest extends FeatureTest {

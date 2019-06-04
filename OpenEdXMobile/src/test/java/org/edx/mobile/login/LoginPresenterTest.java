@@ -1,9 +1,9 @@
-package org.edx.mobile.login;
+package com.nile.kmooc.login;
 
-import org.edx.mobile.test.PresenterTest;
-import org.edx.mobile.util.Config;
-import org.edx.mobile.util.NetworkUtil;
-import org.edx.mobile.view.login.LoginPresenter;
+import com.nile.kmooc.test.PresenterTest;
+import com.nile.kmooc.util.Config;
+import com.nile.kmooc.util.NetworkUtil;
+import com.nile.kmooc.view.login.LoginPresenter;
 import org.junit.Test;
 import org.mockito.Mock;
 

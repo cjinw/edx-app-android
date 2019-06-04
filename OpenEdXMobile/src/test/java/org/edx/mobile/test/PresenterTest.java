@@ -1,8 +1,8 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.view.Presenter;
+import com.nile.kmooc.view.Presenter;
 import org.junit.After;
 
 import static org.mockito.Mockito.mock;

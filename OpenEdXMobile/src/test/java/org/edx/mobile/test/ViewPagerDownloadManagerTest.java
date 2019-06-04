@@ -1,8 +1,8 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.services.ViewPagerDownloadManager;
-import org.edx.mobile.view.common.RunnableCourseComponent;
+import com.nile.kmooc.model.course.CourseComponent;
+import com.nile.kmooc.services.ViewPagerDownloadManager;
+import com.nile.kmooc.view.common.RunnableCourseComponent;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

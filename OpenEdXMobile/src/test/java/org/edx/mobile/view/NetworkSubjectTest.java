@@ -1,8 +1,8 @@
-package org.edx.mobile.view;
+package com.nile.kmooc.view;
 
-import org.edx.mobile.base.BaseFragmentActivity;
-import org.edx.mobile.interfaces.NetworkObserver;
-import org.edx.mobile.interfaces.NetworkSubject;
+import com.nile.kmooc.base.BaseFragmentActivity;
+import com.nile.kmooc.interfaces.NetworkObserver;
+import com.nile.kmooc.interfaces.NetworkSubject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

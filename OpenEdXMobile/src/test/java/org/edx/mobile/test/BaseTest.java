@@ -1,8 +1,8 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.support.annotation.NonNull;
 
-import org.edx.mobile.util.observer.MainThreadObservable;
+import com.nile.kmooc.util.observer.MainThreadObservable;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;

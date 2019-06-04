@@ -1,4 +1,4 @@
-package org.edx.mobile.test.util;
+package com.nile.kmooc.test.util;
 
 import android.support.annotation.NonNull;
 

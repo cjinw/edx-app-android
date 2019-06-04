@@ -1,10 +1,10 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 
-import org.edx.mobile.util.Config;
+import com.nile.kmooc.util.Config;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

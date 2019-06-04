@@ -1,4 +1,4 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

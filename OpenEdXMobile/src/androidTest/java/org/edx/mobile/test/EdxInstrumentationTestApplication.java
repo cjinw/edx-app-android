@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package com.nile.kmooc.test;
 
 import android.support.annotation.Nullable;
 
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.view.Presenter;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.view.Presenter;
 
 public class EdxInstrumentationTestApplication extends MainApplication implements PresenterInjector {
 

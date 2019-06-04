@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.edx.mobile"
+    package="com.nile.kmooc"
     android:installLocation="auto">
 
     <!-- Required by app for server communication and video download -->
@@ -27,7 +27,7 @@
 
     <!-- Setup for Code Coverage -->
     <instrumentation
-        android:name="org.edx.mobile.instrumentation.EdxInstrumentation"
+        android:name="com.nile.kmooc.instrumentation.EdxInstrumentation"
         android:targetPackage="org.edx.mobile" />
 
     <application
@@ -40,7 +40,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="org.edx.mobile.view.SplashActivity"
+            android:name="com.nile.kmooc.view.SplashActivity"
             android:label="@string/app_shortcut_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoDisplayTheme">
@@ -58,41 +58,41 @@
         </activity>
 
         <activity
-            android:name="org.edx.mobile.view.LaunchActivity"
+            android:name="com.nile.kmooc.view.LaunchActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Launch" />
 
         <activity
-            android:name="org.edx.mobile.view.DiscoveryLaunchActivity"
+            android:name="com.nile.kmooc.view.DiscoveryLaunchActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="org.edx.mobile.view.LoginActivity"
+            android:name="com.nile.kmooc.view.LoginActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.RegisterActivity"
+            android:name="com.nile.kmooc.view.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.MainDashboardActivity"
+            android:name="com.nile.kmooc.view.MainDashboardActivity"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.AccountActivity"
+            android:name="com.nile.kmooc.view.AccountActivity"
             android:label="@string/title_account"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CourseOutlineActivity"
+            android:name="com.nile.kmooc.view.CourseOutlineActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
@@ -121,32 +121,32 @@
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.DiscussionAddPostActivity"
+            android:name="com.nile.kmooc.view.DiscussionAddPostActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/discussion_post_create_new_post"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.DiscussionAddResponseActivity"
+            android:name="com.nile.kmooc.view.DiscussionAddResponseActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/discussion_add_response_title"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.DiscussionAddCommentActivity"
+            android:name="com.nile.kmooc.view.DiscussionAddCommentActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/discussion_add_comment_title"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CourseUnitNavigationActivity"
+            android:name="com.nile.kmooc.view.CourseUnitNavigationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="user"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.DownloadListActivity"
+            android:name="com.nile.kmooc.view.DownloadListActivity"
             android:label="@string/title_download"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
@@ -156,23 +156,23 @@
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CourseInfoActivity"
+            android:name="com.nile.kmooc.view.CourseInfoActivity"
             android:label="@string/label_discover"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.ProgramInfoActivity"
+            android:name="com.nile.kmooc.view.ProgramInfoActivity"
             android:label="@string/label_discover"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CourseDetailActivity"
+            android:name="com.nile.kmooc.view.CourseDetailActivity"
             android:label="@string/label_find_courses"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CourseHandoutActivity"
+            android:name="com.nile.kmooc.view.CourseHandoutActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
@@ -187,13 +187,13 @@
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
         <activity
-            android:name="org.edx.mobile.view.CertificateActivity"
+            android:name="com.nile.kmooc.view.CertificateActivity"
             android:label="@string/tab_label_certificate"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar"/>
 
         <activity
-            android:name="org.edx.mobile.view.SettingsActivity"
+            android:name="com.nile.kmooc.view.SettingsActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
@@ -239,7 +239,7 @@
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="android.intent.action.VIEW" />
-                <data android:scheme="org.edx.mobile.innerlinks" />
+                <data android:scheme="com.nile.kmooc.innerlinks" />
             </intent-filter>
         </activity>
 
@@ -248,7 +248,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TranslucentStatusBar" />
 
-        <receiver android:name="org.edx.mobile.module.download.DownloadCompleteReceiver">
+        <receiver android:name="com.nile.kmooc.module.download.DownloadCompleteReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
@@ -266,10 +266,10 @@
             </intent-filter>
         </receiver>
 
-        <!-- adb shell am broadcast -a org.edx.mobile.END_EMMA -->
-        <receiver android:name="org.edx.mobile.instrumentation.EndEmmaBroadcast">
+        <!-- adb shell am broadcast -a com.nile.kmooc.END_EMMA -->
+        <receiver android:name="com.nile.kmooc.instrumentation.EndEmmaBroadcast">
             <intent-filter>
-                <action android:name="org.edx.mobile.END_EMMA" />
+                <action android:name="com.nile.kmooc.END_EMMA" />
             </intent-filter>
         </receiver>
 
@@ -321,11 +321,11 @@
                     android:resource="@xml/image_provider"/>
         </provider>
 
-        <service android:name="org.edx.mobile.services.DownloadSpeedService" />
+        <service android:name="com.nile.kmooc.services.DownloadSpeedService" />
 
         <!-- Notifications through Firebase Cloud Messaging (FCM) -->
         <service
-            android:name="org.edx.mobile.notifications.services.NotificationService"
+            android:name="com.nile.kmooc.notifications.services.NotificationService"
             android:enabled="${firebaseEnabled}">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>

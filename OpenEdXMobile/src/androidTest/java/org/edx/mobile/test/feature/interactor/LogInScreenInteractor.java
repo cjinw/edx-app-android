@@ -1,13 +1,13 @@
-package org.edx.mobile.test.feature.interactor;
+package com.nile.kmooc.test.feature.interactor;
 
 import android.support.test.espresso.Espresso;
 import android.support.test.espresso.ViewInteraction;
 
-import org.edx.mobile.R;
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.test.feature.data.Credentials;
-import org.edx.mobile.util.Config;
-import org.edx.mobile.util.ResourceUtil;
+import com.nile.kmooc.R;
+import com.nile.kmooc.base.MainApplication;
+import com.nile.kmooc.test.feature.data.Credentials;
+import com.nile.kmooc.util.Config;
+import com.nile.kmooc.util.ResourceUtil;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -18,7 +18,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withContentDesc
 import static android.support.test.espresso.matcher.ViewMatchers.withHint;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.edx.mobile.test.feature.matcher.ActionBarMatcher.isInActionBar;
+import static com.nile.kmooc.test.feature.matcher.ActionBarMatcher.isInActionBar;
 import static org.hamcrest.CoreMatchers.allOf;
 
 public class LogInScreenInteractor {
