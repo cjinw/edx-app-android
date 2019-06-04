@@ -67,7 +67,7 @@ public class CourseHandoutFragment extends BaseFragment implements RefreshListen
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_handout, container, false);
+        return inflater.inflate(R.layout.fragment_webview_with_paddings, container, false);
     }
 
     @SuppressLint("SetJavaScriptEnabled")
