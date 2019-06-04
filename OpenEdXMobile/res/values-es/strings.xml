@@ -404,7 +404,7 @@ Si no lo recibe en algunos minutos, asegúrese de revisar su carpeta de spam.</s
   <!--Title for bulk videos download view when in downloading state-->
   <string name="downloading_videos">Descargando Videos...</string>
   <!--Subtitle for bulk videos download view when in downloading state-->
-  <string name="download_remaining">{remaining_videos_count} Restantes, {remaining_videos_size} en total</string>
+  <string name="download_remaining">{remaining_videos_count} Restantes</string>
   <!--Title for bulk videos download view when in downloaded state-->
   <string name="download_complete">Todos los Videos Descargados</string>
   <!--Accessibility label of bulk download switch, when its state is OFF and no download is happening-->

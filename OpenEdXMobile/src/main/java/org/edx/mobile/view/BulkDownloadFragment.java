@@ -340,7 +340,7 @@ public class BulkDownloadFragment extends BaseFragment implements BaseFragment.P
                              @NonNull String secondPlaceholderVal) {
         final Map<String, String> keyValMap = new HashMap<>();
         keyValMap.put(firstPlaceholder, firstPlaceholderVal);
-        keyValMap.put(secondPlaceholder, secondPlaceholderVal);
+//        keyValMap.put(secondPlaceholder, secondPlaceholderVal);
         binding.tvSubtitle.setText(ResourceUtil.getFormattedString(descPattern, keyValMap));
     }
 

@@ -447,15 +447,15 @@
     <string name="download_to_device">Download to Device</string>
     <!-- Subtitle for bulk videos download view when in new or partial videos' download state -->
     <plurals name="download_total">
-        <item quantity="one">{total_videos_count} Video, {total_videos_size} total</item>
-        <item quantity="other">{total_videos_count} Videos, {total_videos_size} total</item>
+        <item quantity="one">{total_videos_count} Video</item>
+        <item quantity="other">{total_videos_count} Videos</item>
     </plurals>
     <!-- Title for bulk videos download view when download is starting -->
     <string name="download_starting">Starting Download…</string>
     <!-- Title for bulk videos download view when in downloading state -->
     <string name="downloading_videos">Downloading Videos…</string>
     <!-- Subtitle for bulk videos download view when in downloading state -->
-    <string name="download_remaining">{remaining_videos_count} Remaining, {remaining_videos_size} total</string>
+    <string name="download_remaining">{remaining_videos_count} Remaining</string>
     <!-- Title for bulk videos download view when in downloaded state -->
     <string name="download_complete">All Videos Downloaded</string>
     <!-- Accessibility label of bulk download switch, when its state is OFF and no download is happening -->
