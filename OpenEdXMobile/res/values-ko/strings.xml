@@ -73,12 +73,19 @@
   <string name="error_heading">로그인 중에 다음 오류가 발생하였습니다</string>
   <!--Error during log in.-->
   <string name="login_failed">이메일 주소/아이디와 비밀번호가 정확한지 확인해주세요. </string>
-  <!--License Agreement related string on Login and Regiser screens-->
-  <!--Create account agreement. Followed by list of agreement names like "End User License Agreement"-->
-  <!--Sign In agreement. Followed by list of agreement names like "End User License Agreement"-->
-  <!--Label for End User License Agreement-->
-  <!--Label for Terms of Service and Honor Code-->
-  <!--Label for Privacy Policy-->
+
+  <!-- License Agreement related string on Login and Regiser screens -->
+  <!-- Create account agreement. Followed by list of agreement names like "End User License Agreement" -->
+  <string name="by_creating_account">이 앱에 로그인 함으로서 다음 약관에 동의하게 됩니다.\n{tos_and_honor_code}\n{privacy_policy}</string>
+  <!-- Sign In agreement. Followed by list of agreement names like "End User License Agreement" -->
+  <string name="by_signing_in">이 앱에 로그인 함으로서 다 약관에 동의하게 됩니다.\n{tos_and_honor_code}\n{privacy_policy}</string>
+  <!-- Label for End User License Agreement -->
+  <string name="licensing_agreement">{platform_name} End User License Agreement</string>
+  <!-- Label for Terms of Service and Honor Code -->
+  <string name="tos_and_honor_code">{platform_name} 서비스 이용약관</string>
+
+  <!-- Label for Privacy Policy -->
+  <string name="privacy_policy">개인정보처리방침</string>
   <string name="login_title">로그인</string>
   <!--Accessible content description of close button on Sign in and Sign up screen-->
   <string name="close">닫기</string>
@@ -138,7 +145,9 @@
   <!--Title of agreement users must accept to use the app-->
   <string name="end_user_title">K-MOOC 이용약관</string>
   <!--Title of privacy policy users must accept to use the app-->
+  <string name="privacy_policy_title" translatable="false">@string/privacy_policy</string>
   <!--Title of terms of service & honor code users must accept to use the app-->
+  <string name="terms_of_service_title">서비스 이용약관</string>
   <!--My Courses-->
   <!--Row of course on dashboard screen-->
   <!--Row of course on dashboard screen-->

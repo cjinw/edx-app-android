@@ -69,15 +69,15 @@ public class TextUtils {
     public static CharSequence generateLicenseText(@NonNull Resources resources,
                                                    @StringRes int licenseTextId) {
         final String platformName = resources.getString(R.string.platform_name);
-        final CharSequence licenseAgreement = ResourceUtil.getFormattedString(resources, R.string.licensing_agreement, "platform_name", platformName);
+//        final CharSequence licenseAgreement = ResourceUtil.getFormattedString(resources, R.string.licensing_agreement, "platform_name", platformName);
         final CharSequence terms = ResourceUtil.getFormattedString(resources, R.string.tos_and_honor_code, "platform_name", platformName);
         final CharSequence privacyPolicy = resources.getString(R.string.privacy_policy);
 
-        final SpannableString agreementSpan = new SpannableString(licenseAgreement);
-        agreementSpan.setSpan(new URLSpan(TextUtils.createAppUri(
-                resources.getString(R.string.end_user_title),
-                resources.getString(R.string.eula_file_link))),
-                0, licenseAgreement.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        final SpannableString agreementSpan = new SpannableString(licenseAgreement);
+//        agreementSpan.setSpan(new URLSpan(TextUtils.createAppUri(
+//                resources.getString(R.string.end_user_title),
+//                resources.getString(R.string.eula_file_link))),
+//                0, licenseAgreement.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         final SpannableString termsSpan = new SpannableString(terms);
         termsSpan.setSpan(new URLSpan(TextUtils.createAppUri(
@@ -92,7 +92,7 @@ public class TextUtils {
                 0, privacyPolicy.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         final Map<String, CharSequence> keyValMap = new HashMap<>();
-        keyValMap.put("license", agreementSpan);
+//        keyValMap.put("license", agreementSpan);
         keyValMap.put("tos_and_honor_code", termsSpan);
         keyValMap.put("privacy_policy", privacyPolicySpan);
 
