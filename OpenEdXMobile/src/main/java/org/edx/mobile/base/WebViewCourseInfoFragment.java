@@ -18,6 +18,7 @@ import org.edx.mobile.interfaces.WebViewStatusListener;
 import org.edx.mobile.model.api.EnrolledCoursesResponse;
 import org.edx.mobile.util.links.DefaultActionListener;
 import org.edx.mobile.view.BaseWebViewFragment;
+import org.edx.mobile.view.dialog.WebViewActivity;
 
 import static org.edx.mobile.view.Router.EXTRA_PATH_ID;
 
@@ -76,7 +77,7 @@ public class WebViewCourseInfoFragment extends BaseWebViewFragment
                     public void onUserNotLoggedIn(@NonNull String courseId, boolean emailOptIn) {
                         lastClickEnrollCourseId = courseId;
                         lastClickEnrollEmailOptIn = emailOptIn;
-                        startActivityForResult(environment.getRouter().getRegisterIntent(), LOG_IN_REQUEST_CODE);
+                        startActivity(WebViewActivity.newIntent(getContext(), "https://www.kmooc.kr/register", getString(R.string.register_title)));
                     }
                 });
         client.setActionListener(defaultActionListener);

@@ -24,6 +24,7 @@
   <string name="cannot_show_dashboard">대시보드를 표시할 수 없습니다.</string>
   <!--Error message shown when browser cannot handle request for given web url-->
   <!--Subjects Discovery-->
+  <string name="label_discover">강좌찾기</string>
   <!--Label for browsing courses by a subject-->
   <!--Button's Label for viewing all subjects-->
   <!--Label for searching subjects-->
@@ -94,6 +95,7 @@
   <!--Title of webview based Find Courses Screen-->
   <!--Title of Degrees tab on Discovery screen-->
   <!--Title of Find Courses tab on Main Dashboard screen-->
+  <string name="label_discovery">강좌찾기</string>
   <!--Button allowing users to send an email for feedback-->
   <string name="label_submit_feedback">문의하기</string>
   <!--Toggle switch on state label-->
@@ -106,7 +108,7 @@
   <string name="settings_txt">설정</string>
   <!--Settings screen version-->
   <string name="label_version">앱 버전</string>
-  <!--Button text to show user Settings screen-->
+  <!--Butdiston text to show user Settings screen-->
   <string name="label_settings">설정</string>
   <!--Title of Account screen-->
   <!--Help Dialog Place Holder messages-->
