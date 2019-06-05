@@ -107,16 +107,23 @@ public class VideoDownloadHelper {
             callback.updateListUI();
             EventBus.getDefault().post(new BulkVideosDownloadCancelledEvent());
         } else {
-            if (isDownloadSizeWithinLimit(downloadSize, MemoryUtil.GB) && !downloadList.isEmpty()) {
-                startDownload(downloadList, activity, callback);
 
-                final DownloadEntry downloadEntry = downloadList.get(0);
-                analyticsRegistry.trackSubSectionBulkVideoDownload(downloadEntry.getSectionName(),
-                        downloadEntry.getChapterName(), downloadEntry.getEnrollmentId(),
-                        downloadCount);
-            } else {
-                showDownloadSizeExceedDialog(downloadList, downloadCount, activity, callback);
-            }
+            startDownload(downloadList, activity, callback);
+
+            final DownloadEntry downloadEntry = downloadList.get(0);
+            analyticsRegistry.trackSubSectionBulkVideoDownload(downloadEntry.getSectionName(),
+                    downloadEntry.getChapterName(), downloadEntry.getEnrollmentId(),
+                    downloadCount);
+//            if (isDownloadSizeWithinLimit(downloadSize, MemoryUtil.GB) && !downloadList.isEmpty()) {
+//                startDownload(downloadList, activity, callback);
+//
+//                final DownloadEntry downloadEntry = downloadList.get(0);
+//                analyticsRegistry.trackSubSectionBulkVideoDownload(downloadEntry.getSectionName(),
+//                        downloadEntry.getChapterName(), downloadEntry.getEnrollmentId(),
+//                        downloadCount);
+//            } else {
+//                showDownloadSizeExceedDialog(downloadList, downloadCount, activity, callback);
+//            }
         }
     }
 

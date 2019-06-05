@@ -28,7 +28,7 @@
     <!-- Setup for Code Coverage -->
     <instrumentation
         android:name="com.nile.kmooc.instrumentation.EdxInstrumentation"
-        android:targetPackage="org.edx.mobile" />
+        android:targetPackage="com.nile.kmooc" />
 
     <application
         android:name=".base.RuntimeApplication"

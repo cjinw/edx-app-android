@@ -204,7 +204,8 @@
   <!--Label shown when no handouts are available for a course-->
   <string name="no_handouts_to_display">현재 이 강좌에 학습자료가 없습니다.</string>
   <!--Label shown when no important dates are available for a course-->
-  <!--Title of the screen where user can delete videos-->
+  <!-- Title of the screen where user can delete videos -->
+  <string name="delete_videos_title">동영상 삭제</string>
   <!--Label for a course item's due date for same day-->
   <string name="due_date_today">오늘 마감 {due_date} </string>
   <!--Label for a course item's due date-->
