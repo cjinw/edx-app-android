@@ -188,8 +188,14 @@ public class CourseOutlineAdapter extends BaseAdapter {
                     final Activity activity = parentFragment.getActivity();
                     if (activity != null && ((RoboAppCompatActivity) activity).isInForeground()) {
                         final BulkDownloadFragment fragment = new BulkDownloadFragment(downloadListener, environment);
-                        parentFragment.getChildFragmentManager().
-                                beginTransaction().replace(convertView.getId(), fragment).commit();
+                        final View finalConvertView = convertView;
+                        // Wait until the convertView has attached with the parent view.
+                        // Using commitNowAllowingStateLoss() method here because there is
+                        // chance transaction could have happened even the fragments state
+                        // is saved.
+                        convertView.post(() -> parentFragment.getChildFragmentManager().
+                                beginTransaction().replace(finalConvertView.getId(), fragment).
+                                commitNowAllowingStateLoss());
                         convertView.setTag(fragment);
                     }
                     break;
@@ -583,7 +589,7 @@ public class CourseOutlineAdapter extends BaseAdapter {
             formattedDate += " " + TimeZoneUtils.getTimeZoneAbbreviation(TimeZone.getDefault());
             return formattedDate;
         } else {
-            dateFormat = new SimpleDateFormat("MMM dd");
+            dateFormat = new SimpleDateFormat("MMM dd, yyyy");
             return ResourceUtil.getFormattedString(context.getResources(), R.string.due_date_past_future,
                     "due_date", dateFormat.format(dueDate)).toString();
         }
