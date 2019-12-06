@@ -76,6 +76,7 @@ public class MainTabsDashboardFragment extends TabsBaseFragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
+//        inflater.inflate(R.menu.my_courses, menu);
         inflater.inflate(R.menu.my_courses, menu);
         menu.findItem(R.id.menu_item_account).setVisible(true);
         menu.findItem(R.id.menu_item_account).setIcon(
@@ -121,6 +122,21 @@ public class MainTabsDashboardFragment extends TabsBaseFragment {
     public List<FragmentItemModel> getFragmentItems() {
         ArrayList<FragmentItemModel> items = new ArrayList<>();
 
+        final Config.ProgramDiscoveryConfig programDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getProgramDiscoveryConfig();
+        final Config.CourseDiscoveryConfig courseDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getCourseDiscoveryConfig();
+        if ((courseDiscoveryConfig != null && courseDiscoveryConfig.isDiscoveryEnabled()) ||
+                (programDiscoveryConfig != null && programDiscoveryConfig.isDiscoveryEnabled(environment))) {
+            items.add(new FragmentItemModel(MainDiscoveryFragment.class,
+                    getResources().getString(R.string.label_discovery), FontAwesomeIcons.fa_search,
+                    new FragmentItemModel.FragmentStateListener() {
+                        @Override
+                        public void onFragmentSelected() {
+                            EventBus.getDefault().post(new DiscoveryTabSelectedEvent());
+                        }
+                    }
+            ));
+        }
+
         items.add(new FragmentItemModel(MyCoursesListFragment.class,
                 getResources().getString(R.string.label_my_courses), FontAwesomeIcons.fa_list_alt,
                 new FragmentItemModel.FragmentStateListener() {
@@ -143,20 +159,20 @@ public class MainTabsDashboardFragment extends TabsBaseFragment {
                     }));
         }
 
-        final Config.ProgramDiscoveryConfig programDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getProgramDiscoveryConfig();
-        final Config.CourseDiscoveryConfig courseDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getCourseDiscoveryConfig();
-        if ((courseDiscoveryConfig != null && courseDiscoveryConfig.isDiscoveryEnabled()) ||
-                (programDiscoveryConfig != null && programDiscoveryConfig.isDiscoveryEnabled(environment))) {
-            items.add(new FragmentItemModel(MainDiscoveryFragment.class,
-                    getResources().getString(R.string.label_discovery), FontAwesomeIcons.fa_search,
-                    new FragmentItemModel.FragmentStateListener() {
-                        @Override
-                        public void onFragmentSelected() {
-                            EventBus.getDefault().post(new DiscoveryTabSelectedEvent());
-                        }
-                    }
-            ));
-        }
+//        final Config.ProgramDiscoveryConfig programDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getProgramDiscoveryConfig();
+//        final Config.CourseDiscoveryConfig courseDiscoveryConfig = environment.getConfig().getDiscoveryConfig().getCourseDiscoveryConfig();
+//        if ((courseDiscoveryConfig != null && courseDiscoveryConfig.isDiscoveryEnabled()) ||
+//                (programDiscoveryConfig != null && programDiscoveryConfig.isDiscoveryEnabled(environment))) {
+//            items.add(new FragmentItemModel(MainDiscoveryFragment.class,
+//                    getResources().getString(R.string.label_discovery), FontAwesomeIcons.fa_search,
+//                    new FragmentItemModel.FragmentStateListener() {
+//                        @Override
+//                        public void onFragmentSelected() {
+//                            EventBus.getDefault().post(new DiscoveryTabSelectedEvent());
+//                        }
+//                    }
+//            ));
+//        }
 
         return items;
     }

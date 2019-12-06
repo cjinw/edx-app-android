@@ -46,8 +46,9 @@ public class WebViewCourseInfoFragment extends BaseWebViewFragment
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        loadUrl(getInitialUrl());
         setWebViewActionListener();
+        loadUrl(getInitialUrl());
+//        setWebViewActionListener();
         if (null != savedInstanceState) {
             lastClickEnrollCourseId = savedInstanceState.getString(INSTANCE_COURSE_ID);
             lastClickEnrollEmailOptIn = savedInstanceState.getBoolean(INSTANCE_EMAIL_OPT_IN);

@@ -59,6 +59,8 @@ public abstract class WebViewDiscoverFragment extends BaseWebViewFragment {
         String searchQueryExtra = null;
         String searchUrl = null;
 
+        setWebViewActionListener();
+
         if (savedInstanceState != null) {
             searchUrl = savedInstanceState.getString(INSTANCE_CURRENT_DISCOVER_URL, null);
         }
@@ -74,7 +76,7 @@ public abstract class WebViewDiscoverFragment extends BaseWebViewFragment {
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this);
         }
-        setWebViewActionListener();
+//        setWebViewActionListener();
     }
 
     public void setWebViewActionListener() {
@@ -107,7 +109,8 @@ public abstract class WebViewDiscoverFragment extends BaseWebViewFragment {
     }
 
     private void initSearch(@NonNull String query) {
-        final String baseUrl = getInitialUrl();
+//        final String baseUrl = getInitialUrl();getSearchUrl()
+        final String baseUrl = getSearchUrl();
         final Map<String, String> queryParams = new HashMap<>();
         queryParams.put(QUERY_PARAM_SEARCH, query);
         loadUrl(buildUrlWithQueryParams(logger, baseUrl, queryParams));
