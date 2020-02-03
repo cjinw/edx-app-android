@@ -4,6 +4,8 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -60,6 +62,21 @@ public abstract class BaseWebViewFragment extends OfflineSupportBaseFragment
         webView = (EdxWebView) view.findViewById(R.id.webview);
         progressWheel = (ProgressBar) view.findViewById(R.id.loading_indicator);
 
+//        webView.setOnKeyListener(new View.OnKeyListener(){
+//
+//            public boolean onKey(View v, int keyCode, KeyEvent event) {
+//                if (keyCode == KeyEvent.KEYCODE_BACK
+//                        && event.getAction() == MotionEvent.ACTION_UP
+//                        && webView.canGoBack()) {
+//                    webView.goBack();
+//                    return true;
+//                }
+//
+//                return false;
+//            }
+//
+//        });
+
         initWebView();
     }
 
@@ -102,6 +119,7 @@ public abstract class BaseWebViewFragment extends OfflineSupportBaseFragment
                     public void onClick(View v) {
                         onRefresh();
                     }
+
                 });
     }
 
