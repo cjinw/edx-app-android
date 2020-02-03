@@ -280,10 +280,12 @@ public class SocialLoginDelegate {
             final boolean isFacebook = backend.equalsIgnoreCase(PrefManager.Value.BACKEND_FACEBOOK);
             if (feature == Feature.SIGN_IN && e.getResponseCode() ==  HttpURLConnection.HTTP_BAD_REQUEST) {
                 final String title =  activity.getResources().getString(R.string.login_error);
-                final CharSequence desc = ResourceUtil.getFormattedString(context.getResources(),
-                        isFacebook ? R.string.error_account_not_linked_desc_fb_2 : R.string.error_account_not_linked_desc_google_2,
-                        "platform_name", environment.getConfig().getPlatformName());
-                throw new LoginException(new LoginErrorMessage(title, desc.toString()));
+//                final CharSequence desc = ResourceUtil.getFormattedString(context.getResources(),
+//                        isFacebook ? R.string.error_account_not_linked_desc_fb_2 : R.string.error_account_not_linked_desc_google_2,
+//                        "platform_name", environment.getConfig().getPlatformName());
+                final String desc =  activity.getResources().getString(R.string.error_account_not_linked_SNS);
+//                throw new LoginException(new LoginErrorMessage(title, desc.toString()));
+                throw new LoginException(new LoginErrorMessage(title, desc));
             }
             final CharSequence title = ResourceUtil.getFormattedString(context.getResources(),
                     isFacebook ? R.string.error_account_not_linked_title_fb : R.string.error_account_not_linked_title_google,
